@@ -1,0 +1,38 @@
+:root{
+    --golden-color: #ca9b52 ;
+    --black-color: #000000 ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*Utility Classes*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0 auto;
+}
+
+/*a {
+    text-decoration: none;
+    color: #cccccc;
+    display: inline-block;
+}*/
+.container{
+    max-width: 90%;
+    margin: auto;    
+}
+.text-center{
+    text-align: center;
+}
+.margin-right{
+    margin-right:16px;
+}
+.margin-left{
+    margin-left: 16px;
+}
+.margin-top{
+    margin-top: 16px;
+}
+.margin-bottom{
+    margin-bottom: 16px;
+}
