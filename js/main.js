@@ -43,3 +43,14 @@ function slidefun(n) {
 	dot[counter - 1].className += " active";
 }
 //slideShow js ends
+
+
+function myFunction(x) {
+	x.classList.toggle("change");
+}
+
+$(document).ready(function () {
+	$('#icon').click(function () {
+		$('ul').toggleClass('show');
+	});
+});
