@@ -19,12 +19,18 @@ html {
 .slider{
 	position: relative;
 	width: 100%;
-	background: #2c3e50; /* darckblue */
+	background: #000000; 
 }
 .myslide{
-	height: 320px;
+	height: 65vh;;
 	display: none;
 	overflow: hidden;
+}
+
+.myslide img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .prev, .next{
@@ -80,22 +86,22 @@ html {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {opacity: 0.3}
+  to {opacity: 0.9}
 }
 
 @keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {opacity: 0.3}
+  to {opacity: 0.9}
 }
 /* /muslide add fade */
 
 /* 3 */
-.txt{
+.slideShowTxt{
 	position: absolute;
 	color: #fff;
 	letter-spacing: 2px;
-	line-height: 35px;
+	line-height: 25px;
 	top: 40%;
 	left: 15%;
 	-webkit-animation-name: posi;
@@ -116,20 +122,19 @@ html {
   to {left: 15%;}
 }
 
-.txt h1{
+.slideShowTxt h1{
 	color: #ffffff; 
 	font-size: 30px;
 	margin-bottom: 20px;
 }
-.txt p{
-	font-weight: bold;
+.slideShowTxt p{
 	font-size: 15px;
 }
 /* /3 */
 
 /* 4 */
 .imgSlideShow{
-	transform: scale(1.5, 1.5);
+	transform: scale(1, 1);
 	-webkit-animation-name: zoomin;
   	-webkit-animation-duration: 80s;
   	animation-name: zoomin;
@@ -149,11 +154,12 @@ html {
 
 
 /* 5 */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 780px){
 	.myslide{
-		height: 500px;
+		height: 50vh;
 	}
-	.txt{
+
+	.slideShowTxt{
 		letter-spacing: 2px;
 		line-height: 25px;
 		top: 50%;
@@ -176,11 +182,13 @@ html {
 	  to {top: 50%;}
 	}
 
-	.txt h1{
+	.slideShowTxt h1{
 		font-size: 30px;
+		text-align: center;
 	}
-	.txt p{
-		font-size: 15px;
+	.slideShowTxt p{
+		font-size: 10px;
+		text-align: center;
 	}
 
 }
@@ -188,9 +196,27 @@ html {
 
 /* 6 */
 @media screen and (max-width: 520px){
-	.txt h1{
+    .myslide{
+		height: 30vh;
+	}
+	.slideShowTxt h1{
 		font-size: 30px;
 		margin-bottom: 15px;
+		text-align: center;
 	}
+	.slideShowTxt p{
+		display: none;
+	}
+
+	.dot{
+		display: inline-block;
+		width: 1px;
+		height: 1px;
+		background-color: #f4f8fa;
+		border-radius: 50%;
+		margin: 0 5px;
+		cursor: pointer;
+	}
+    
 }
 /* /6 */
