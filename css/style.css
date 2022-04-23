@@ -240,7 +240,52 @@ html {
 	color: var(--golden-color);
 }
 
-.navbar #icon{
+/*------------Accordion-----------------*/
+.accordion-container{
+	display: none;
+}
+
+.accordion {
+	background-color: var(--lightGrey-color);
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+}
+
+.activeAccordion,
+.accordion:hover {
+	background-color: var(--lightGrey-color);
+}
+
+.accordion:after {
+	content: '\2630';
+	color: var(--black-color);
+	font-weight: bold;
+	float: center;
+	margin: 5px;
+}
+
+.activeAccordion:after {
+	content: '\f0d7';
+  	font-family: 'FontAwesome';
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	text-align: center;
+	transition: max-height 0.2s ease-out;
+}
+/*------------Accordion--ends--------------*/
+
+/*.navbar #icon{
 	color: var(--black-color);
 	font-size: 20px;
 	line-height: 45px;
@@ -249,9 +294,8 @@ html {
 	padding: 3px;
 	cursor: pointer;
 	display: none;
-}
-
-/* Navigation bar ends*/
+}*/
+ /*--------------- Navigation bar ends -------------------*/
 
 
 
@@ -318,7 +362,13 @@ html {
 		background-color: #ca9b52;
 	}
 
-	/*-------------------*/	
+	.accordion-container{
+		display: block;
+	}
+
+	
+
+	/*----------------	
 	.navbar #icon{
 		display: block;
 	}
@@ -345,8 +395,7 @@ html {
 	.nav-container a{
 		color: #ffffff;
 		font-size: 8px;
-	}
-
+	}---*/
 }
 
 @media screen and (max-width: 520px) {
