@@ -1,4 +1,4 @@
-//slideShow js
+//---------------------slideShow-JS----------------------//
 const myslide = document.querySelectorAll('.myslide'),
 	  dot = document.querySelectorAll('.dot');
 let counter = 1;
@@ -42,15 +42,37 @@ function slidefun(n) {
 	myslide[counter - 1].style.display = "block";
 	dot[counter - 1].className += " active";
 }
-//slideShow js ends
+//---------------------slideShow-JS-ENDS--------------------//
 
+//-----------------------Accordion js-----------------------//
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-function myFunction(x) {
-	x.classList.toggle("change");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeAccordion");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
+//-----------------------Accordion JS ENDS-----------------------//
 
-$(document).ready(function () {
-	$('#icon').click(function () {
-		$('ul').toggleClass('show');
-	});
-});
+
+
+
+
+
+//
+//function myFunction(x) {
+//	x.classList.toggle("change");
+//}
+
+//$(document).ready(function () {
+//	$('#icon').click(function () {
+//		$('ul').toggleClass('show');
+//	});
+//});
