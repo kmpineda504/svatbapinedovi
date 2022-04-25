@@ -45,11 +45,11 @@ function slidefun(n) {
 //---------------------slideShow-JS-ENDS--------------------//
 
 //-----------------------Accordion js-----------------------//
-var acc = document.getElementsByClassName("accordion");
+var accordion = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function() {
     this.classList.toggle("activeAccordion");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
