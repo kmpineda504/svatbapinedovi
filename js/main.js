@@ -60,19 +60,3 @@ for (i = 0; i < accordion.length; i++) {
   });
 }
 //-----------------------Accordion JS ENDS-----------------------//
-
-
-
-
-
-
-//
-//function myFunction(x) {
-//	x.classList.toggle("change");
-//}
-
-//$(document).ready(function () {
-//	$('#icon').click(function () {
-//		$('ul').toggleClass('show');
-//	});
-//});
