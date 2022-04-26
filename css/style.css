@@ -170,11 +170,48 @@ html {
 	color: var(--black-color);
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.1vw;
+	font-size: 1.2vw;
 }
 .navbar a:hover {
 	color: var(--golden-color);
 }
+/* Dropdown Button */
+.dropbtn {
+	border: none;
+
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	min-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	text-align: left;
+	color: var(--black-color);
+	padding: 12px 20px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {color: var(--golden-color);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .paddingLeft{
+	  padding-left: 10px;
+  }
+  
+
 /*-----------------vanillaNavigationBar_ENDS-----------------*/
 
 
@@ -184,9 +221,9 @@ html {
 }
 
 .accordion {
+	padding: 15px;
 	background-color: #ffffff;
 	cursor: pointer;
-	padding: 15px;
 	width: 100%;
 	border: none;
 	text-align: center;
@@ -202,12 +239,12 @@ html {
 .accordion:after {
 	font-weight: bold;
 	float: center;
-	margin: 5px;
 }
 .activeAccordion:after {
   	font-family: 'FontAwesome';
 }
 .panel {
+	padding: 0 18px;
 	background-color: white;
 	max-height: 0;
 	overflow: hidden;
@@ -294,7 +331,11 @@ html {
 		display: none;
 	}
 
-	
+	.navbar {
+		width: 100%;
+		height: auto;
+		box-shadow: none;
+	}
 
 	.navbar ul{
 		position: relative;
@@ -304,11 +345,10 @@ html {
 		background: #ffffff;
 		transition: all 0.5s;
 	}
-
 	.navbar li{
 		display: block;
 		margin: 5px 0;
-		line-height: 10px;
+		line-height: 15px;
 	}
 	.navbar a{
 		color: var(--black-color);
@@ -341,6 +381,10 @@ html {
 
 	.active {
 		background-color: #ca9b52;
+	}
+	.navbar a{
+		color: var(--black-color);
+		font-size: 2.7vw;
 	}
 
 }
