@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root{
+	--terracota-color: #c78666;
     --golden-color: #ebb63c ;
 	--hoverGolden-color: #ffec99;
 	--lightGrey-color: #ebe7ee;
@@ -272,16 +273,15 @@ html {
 }
 /*------------accordionNavigationBar_ENDS--------------*/
 
-/*------------countdowntimer--------------*/
+/*------------countdownTimer--------------*/
 .countdown{
 	text-align: center;
   	font-size: 60px;
   	margin: 2%;
 }
-
 /*------------countdownTimer_ENDS--------------*/
 
-/*------------luckyCouple_section--------------*/
+/*------------couple_section--------------*/
 .two-colums_smallLeft{
 	display: grid;
     grid-gap: 20px;
