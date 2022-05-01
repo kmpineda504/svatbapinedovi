@@ -94,7 +94,7 @@ var x = setInterval(function() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+function plusQuote(n) {
   showSlides(slideIndex += n);
 }
 

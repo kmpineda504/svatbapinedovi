@@ -13,6 +13,8 @@
 	--glossy-grape: #b39ebcff;
 	--chinese-violet: #86648aff;
 	--palatinate-purple: #582957ff;
+	--gradient: linear-gradient(to bottom right, #582957ff,rgb(56, 27, 56));
+
 
 }
 html {scroll-behavior: smooth;}
@@ -413,34 +415,30 @@ q {font-style: italic;}
 	position: relative;
 	background: #f1f1f1f1;
 }
-
 .myQuotes {
 	display: none;
 	padding: 80px;
 	text-align: center;
+	color: #ffff;
+}
+.darken-blending{
+	background-blend-mode:darken;
 }
 .quote-img-1{
-	background: url(../img/imgSlideShow01.jpg) fixed no-repeat center/cover;		
+	background: rgba(0, 0, 0, 0.5) url(../img/quoteBG1.jpg) fixed no-repeat center/cover;		
 }
 .quote-img-2{
-	background:  url(../img/imgSlideShow02.jpg) fixed no-repeat center/cover;
+	background: rgba(0, 0, 0, 0.5)  url(../img/quoteBG2.jpg) fixed no-repeat center/cover;
 }
 .quote-img-3{
-	background: url(../img/imgSlideShow03.jpg) fixed no-repeat center/cover;
+	background: rgba(0, 0, 0, 0.5)  url(../img/quoteBG3.jpg) fixed no-repeat center/cover;
 }
-
-.dot-container {
-	text-align: center;
-	padding: 15px;
-	background: #ddd;
-}
-
 .dotQuote {
 	cursor: pointer;
-	height: 8px;
-	width: 8px;
+	height: 7px;
+	width: 7px;
 	margin: 0 0.7em;
-	background-color: var(--glossy-grape);
+	background-color: #fff;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
@@ -448,7 +446,7 @@ q {font-style: italic;}
 
 .activeQuote,
 .dotQuote:hover {
-	background-color: var(--palatinate-purple);
+	background-color: var(--honey-yellow);
 }
 
 .author {
