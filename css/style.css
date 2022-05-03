@@ -51,6 +51,7 @@ q {font-style: italic;}
 	align-items: center;
 	justify-content: center; 
 	padding: 1.5rem;
+	background-color: #ebe7ee;
 }
 .btn{
 	text-decoration: none;
@@ -80,7 +81,7 @@ q {font-style: italic;}
 .margin-left{margin-left: 2em}
 .padding-top{padding-top: 1.5rem;}
 .padding-bottom{padding-bottom: 1.5rem;}
-.hide-on-desktop{display: none;}
+.hidden{display: none;}
 .rotate-text{transform: rotate(-10deg);}
 .text-align-center{text-align: center; }
 .text-align-left{text-align: left;}
@@ -311,19 +312,18 @@ q {font-style: italic;}
 }
 /*----------------------------countdownTimer_ENDS-----------------------------------*/
 /*------------------------------------item1-----------------------------------------*/
-#item1{
+#home-announcement{
 	min-height: 100vh;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
 }
-.item1-left{
+.home-announcement-left{
 	width: 45%;
 	height: 500px;
 	background: url(../img/safeTheDate_section_edited@2x.jpg) no-repeat center/cover;
-	border-radius: 8px;
 }
-.item1-right{
+.home-announcement-right{
 	background: url(../img/item1_rightbox.jpg) no-repeat center/cover;
 	width: 50%;
 	min-height: 400px;
@@ -333,16 +333,15 @@ q {font-style: italic;}
 	padding: 30px;
 	margin-left: -45px;
 	border-right: solid var(--palatinate-purple) 50px;
-	border-radius: 8px;
 }
-.item1-right h2{
+.home-announcement-right h2{
 	font-weight: lighter;
 	font-size: 3vw;
 	text-align: center;
 	padding: 5px 0px 5px 0;
 	color: var(--jet);
 }
-.item1-right h3{
+.home-announcement-right h3{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: lighter;
 	font-size: 2vw;
@@ -350,37 +349,35 @@ q {font-style: italic;}
 	color: var(--palatinate-purple);
 	opacity: 85%;
 }
-.item1-right h4{
+.home-announcement-right h4{
 	font-weight: lighter;
 	font-size: 1.2vw;
 	text-align: center;
 	color: var(--palatinate-purple);
 }
-.item1-right p{
+.home-announcement-right p{
 	font-weight: lighter;
 	text-align: center;
 	color: var(--jet);
 }
-.item1-right .stylish-font{
+.home-announcement-right .stylish-font{
 	color: var(--honey-yellow);
 }
-.item1-right .three-colums{
+.home-announcement-right .three-colums{
 	grid-template-columns: 1fr 0.4fr 1fr;
 	align-items: center;
 	justify-content: center;
 }
 /*-----------------------------------------item1_ENDS-----------------------------------*/
 /*-------------------------------------------item2--------------------------------------*/
-#item2{
-	background-color: var(--languid-lavender);
+#home-about{
+	background-color: none;
 }
 .card {
 	max-width: auto;
 	padding: 1.5em;
 	margin: 10px;
-	text-align: center;
 	background-color: #ffffff;
-	border-radius: 8px;
  }
 .profile-image{
 	border-radius: 50%;
@@ -414,7 +411,6 @@ q {font-style: italic;}
 /*------------------------------------------item3--------------------------------------*/
 .quotes-container {
 	position: relative;
-	background: #f1f1f1f1;
 }
 .myQuotes {
 	display: none;
@@ -452,12 +448,12 @@ q {font-style: italic;}
 .author {color: var(--honey-yellow);}
 /*---------------------------------------item3_ENDS------------------------------------*/
 /*------------------------------------------item4--------------------------------------*/
-#item4{background-color: var(--languid-lavender);}
-#item4 .card{
+#home-information{background-color: none;}
+#home-information .card{
 	margin: 0;
 	height: 90%;
 }
-#item4 .btn{
+#home-information .btn{
 	border: none;
 	margin-top: -150px;
 	padding: 0.7rem 2rem;
@@ -467,7 +463,7 @@ q {font-style: italic;}
 	letter-spacing: 0.2em;	
 	transition: 0.2s;
 }	
-#item4 .btn:hover{
+#home-information .btn:hover{
 	transform: scale(1.2);	
 }	
 .infoIcon-schedule{
@@ -487,56 +483,25 @@ q {font-style: italic;}
 }
 /*---------------------------------------item4_ENDS------------------------------------*/
 /*----------------------------------------gallery--------------------------------------*/
-.gallery{
-	margin: 2%;
-}
 .gallery img{
 	transition: 0.5s;
 	padding: 2%;
-	width: 250px;
+	width: 30%;
 	filter: grayscale(35%);
 }
 .gallery img:hover{
 	filter: none;
 	transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------gallery_ENDS-----------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----------------------------------------footer---------------------------------------*/
+.footer-contact{
+	margin-right: 40%;
+}
+.footer-column{
+	margin-right: auto;
+}
+/*--------------------------------------footer_ENDS------------------------------------*/
 /*------------couple_section--------------*/
 .two-colums{
 	display: grid;
