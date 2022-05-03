@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/flag-icon.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <script src="https://kit.fontawesome.com/ba3479834a.js" crossorigin="anonymous"></script>
@@ -229,17 +230,17 @@
                         src="img/gallery/smallSize05.jpg"></a>
                 <a href="img/gallery/originalSize06.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize06.jpg"></a>
-                <a href="img/gallery/originalSize07.jpg" data-lightbox="mygallery" class="hidden"><img
+                <a href="img/gallery/originalSize07.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize07.jpg"></a>
-                <a href="img/gallery/originalSize08.jpg" data-lightbox="mygallery" class="hidden"><img
+                <a href="img/gallery/originalSize08.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize08.jpg"></a>
-                <a href="img/gallery/originalSize09.jpg" data-lightbox="mygallery" class="hidden"><img
+                <a href="img/gallery/originalSize09.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize09.jpg"></a>
-                <a href="img/gallery/originalSize10.jpg" data-lightbox="mygallery" class="hidden"><img
+                <a href="img/gallery/originalSize10.jpg" data-lightbox="mygallery" class="hide-on-small"><img
                         src="img/gallery/smallSize10.jpg"></a>
-                <a href="img/gallery/originalSize11.jpg" data-lightbox="mygallery" class="hidden"><img
+                <a href="img/gallery/originalSize11.jpg" data-lightbox="mygallery" class="hide-on-small"><img
                         src="img/gallery/smallSize11.jpg"></a>
-                <a href="img/gallery/originalSize12.jpg" data-lightbox="mygallery" class="hidden"><img
+                <a href="img/gallery/originalSize12.jpg" data-lightbox="mygallery" class="hide-on-small"><img
                         src="img/gallery/smallSize12.jpg"></a>
                 <a href="img/gallery/originalSize13.jpg" data-lightbox="mygallery" class="hidden"><img
                         src="img/gallery/smallSize13.jpg"></a>
@@ -253,22 +254,47 @@
     
     <footer id="footer">
         <div class="container">
+            <div class="line"></div>
             <div class="flex">
-                <div class="footer-contact">
+                <div class="footer-section big-item">               
                     <h2>Contact us</h2>
-                    <h3>Address</h3>
-                    <p>Malovická 3,</br>Praha 4, 141 00</p>
+                    <h3> Address</h3>
+                    <div class="flex align-items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Malovická 3, Praha 4</br>141 00, Czech Republic</p>
+                    </div>
                     <ul>
-                        <li>svatba.pinedovi@gmail.com</li>
-                        <li>+420 774 235 945</li>
+                        <li>
+                            <div class="flex align-items-center">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>Kevin: +420 774 235 945 </br> Anežka: +420 776 586 121</p>
+                            </div>
+                        </li>
+                        <li><i class="fa-solid fa-at"></i><span>svatba.pinedovi@gmail.com</span></li>
                     </ul>
                 </div>
-              
-                <div class="footer-column ">
-                    <h2 class="text-align-center">Helpful link</h2>
+                <div class="footer-section small-item">
+                    <h2>Helpful links</h2>
+                    <div class="flex flex-column">
+                        <div>  
+                            <ul class="footer-list">
+                                <li><a href="#">The Wedding</a></li>
+                                <li><a href="#">Wedding schedule</a></li>
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Confirmation of participation</a></li>
+                                <li><a href="#">Gifts List</a></li>
+                            </ul>
+                        </div>
+                        <div class="languages-section">
+                            <div class="line"></div>
+                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-esp"></i></a>
+                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-cze"></i></a>
+                            <a href="#"class="language-btn"><i class="flag-icon flag-icon-gbr"></i></a>
+                        </div>
+                    </div> 
                 </div>
+                
             </div>
-            
         </div>
     </footer>
 </body>

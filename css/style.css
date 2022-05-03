@@ -43,16 +43,9 @@ q {font-style: italic;}
 	box-sizing: border-box;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.container {
-	width: 80%;
-	max-width: 1000px;
-	margin: 0 auto;
-	align-items: center;
-	justify-content: center; 
-	padding: 1.5rem;
-	background-color: #ebe7ee;
-}
+.align-items-center{align-items: center;}
+.big-item{-webkit-flex: 1.5 0 0; flex: 1.5 0 0;}
+.box-shadow {box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.05);;}
 .btn{
 	text-decoration: none;
 	color: var(--palatinate-purple);
@@ -66,16 +59,25 @@ q {font-style: italic;}
 	background-color: var(--palatinate-purple);
 	color: #ffff;
 }
-.box-shadow {box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.05);;}
+.container {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center; 
+	padding: 1.5rem;
+	background-color: #ebe7ee;
+}
 .drop-shadow-medium {filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.6));}
 .drop-shadow-large {filter: drop-shadow(5px 5px 10px rgb(0 0 0 / 0.3));}
 .content-align-left{margin-left: auto; margin-right: 0;}
 .content-align-right{margin-left: 0;margin-right: 100%;}
 .content-align-center{margin: 0 auto;}
-.flex{display: flex; justify-content: center;}
+.flex{display: flex;}
 .flex-column{flex-direction:column;}
 .float-right{float: right;}
 .float-left{float: left;}
+.justify-content-center{justify-content: center;}
 .margin-10px{margin: 10px;}
 .margin-right{margin-right: 2em}
 .margin-left{margin-left: 2em}
@@ -86,6 +88,7 @@ q {font-style: italic;}
 .text-align-center{text-align: center; }
 .text-align-left{text-align: left;}
 .text-align-right{text-align: right;}
+.small-item{-webkit-flex: 1 0 0; flex: 1 0 0;}
 .stylish-font{
 	font-family:'Great Vibes', cursive;
 	/*letter-spacing: 8px;*/
@@ -237,7 +240,7 @@ q {font-style: italic;}
 }
 .navbar a {
 	text-align: center;
-	color: var(--black-color);
+	color: var(--jet);
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.2vw;
@@ -485,9 +488,9 @@ q {font-style: italic;}
 /*----------------------------------------gallery--------------------------------------*/
 .gallery img{
 	transition: 0.5s;
-	padding: 2%;
-	width: 30%;
-	filter: grayscale(35%);
+	padding: 1%;
+	width: 20%;
+	filter: grayscale(25%);
 }
 .gallery img:hover{
 	filter: none;
@@ -495,12 +498,73 @@ q {font-style: italic;}
 }
 /*--------------------------------------gallery_ENDS-----------------------------------*/
 /*----------------------------------------footer---------------------------------------*/
-.footer-contact{
-	margin-right: 40%;
+#footer{
+	background-color: #ebe7ee;
 }
-.footer-column{
-	margin-right: auto;
+.footer-section{
+	width:22%;
+    display:block;
+    padding: 2% 5%;
 }
+.footer-section h2{padding: 0.2em 0;}
+.footer-section h2::after{
+	content: "";
+	display: block;
+	height: 1px;
+	width: auto;
+	background: var(--jet);
+	margin: 0.5em 0;
+	opacity: 0.2;
+}
+.footer-section h3{padding: 0;}
+.footer-section ul{
+	text-align: left;
+	list-style: none;
+	width: auto;
+}
+.footer-section a{
+	text-align: left;
+	color: var(--jet);
+	text-decoration: none;
+}
+.footer-section a:hover{
+	color: var(--palatinate-purple);
+}
+.footer-section p, span{
+	margin: 0 1em;
+}
+.footer-section i{
+	color: var(--palatinate-purple);
+}
+.footer-list li{
+	padding: 0.2em;
+}
+
+.language-btn {
+	padding-right: 10px;
+}
+
+
+.line{
+    margin: 0.7em 0;
+    width: auto;
+    height:1px;;
+    background: var(--jet);
+	opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------footer_ENDS------------------------------------*/
 /*------------couple_section--------------*/
 .two-colums{
@@ -643,6 +707,22 @@ q {font-style: italic;}
 		float: none;
 		margin: 0 auto;
 	}
+	.gallery img{
+		transition: 0.5s;
+		padding: 2%;
+		width: 30%;
+		filter: grayscale(25%);
+	}
+	.footer-section{
+		width:auto;
+	}
+	#footer .flex{
+		flex-direction: row;
+	}
+	#footer .flex-column{
+		flex-direction: column;
+	}
+	
 }
 
 @media screen and (max-width: 480px) {
