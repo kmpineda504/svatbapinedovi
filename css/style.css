@@ -61,6 +61,10 @@ q {font-style: italic;}
 	letter-spacing: 2px;
 	border: solid var(--palatinate-purple) 0.9px;
 }
+.btn:hover{
+	background-color: var(--palatinate-purple);
+	color: #ffff;
+}
 .box-shadow {box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.05);;}
 .drop-shadow-medium {filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.6));}
 .drop-shadow-large {filter: drop-shadow(5px 5px 10px rgb(0 0 0 / 0.3));}
@@ -68,8 +72,10 @@ q {font-style: italic;}
 .content-align-right{margin-left: 0;margin-right: 100%;}
 .content-align-center{margin: 0 auto;}
 .flex{display: flex; justify-content: center;}
+.flex-column{flex-direction:column;}
 .float-right{float: right;}
 .float-left{float: left;}
+.margin-10px{margin: 10px;}
 .margin-right{margin-right: 2em}
 .margin-left{margin-left: 2em}
 .padding-top{padding-top: 1.5rem;}
@@ -315,8 +321,8 @@ q {font-style: italic;}
 	width: 45%;
 	height: 500px;
 	background: url(../img/safeTheDate_section_edited@2x.jpg) no-repeat center/cover;
+	border-radius: 8px;
 }
-
 .item1-right{
 	background: url(../img/item1_rightbox.jpg) no-repeat center/cover;
 	width: 50%;
@@ -327,11 +333,7 @@ q {font-style: italic;}
 	padding: 30px;
 	margin-left: -45px;
 	border-right: solid var(--palatinate-purple) 50px;
-}
-
-.item1-right .btn:hover{
-	color: var(--chinese-violet);
-	border-color: var(--chinese-violet);
+	border-radius: 8px;
 }
 .item1-right h2{
 	font-weight: lighter;
@@ -373,11 +375,12 @@ q {font-style: italic;}
 	background-color: var(--languid-lavender);
 }
 .card {
-	max-width: 400px;
+	max-width: auto;
 	padding: 1.5em;
 	margin: 10px;
 	text-align: center;
 	background-color: #ffffff;
+	border-radius: 8px;
  }
 .profile-image{
 	border-radius: 50%;
@@ -406,9 +409,7 @@ q {font-style: italic;}
 	opacity: 0.8;
 	font-size: 1rem ;
 }
-.social-list a:hover{
-	opacity: 1;
-}
+.social-list a:hover{opacity: 1;}
 /*---------------------------------------item2_ENDS------------------------------------*/
 /*------------------------------------------item3--------------------------------------*/
 .quotes-container {
@@ -448,9 +449,38 @@ q {font-style: italic;}
 .dotQuote:hover {
 	background-color: var(--honey-yellow);
 }
-
-.author {
-	color: cornflowerblue;
+.author {color: var(--honey-yellow);}
+/*---------------------------------------item3_ENDS------------------------------------*/
+/*------------------------------------------item4--------------------------------------*/
+#item4{background-color: var(--languid-lavender);}
+#item4 .card{
+	margin: 0;
+	height: 90%;
+}
+#item4 .btn{
+	border: none;
+	margin-top: -150px;
+	padding: 0.7rem 2rem;
+	background-color: var(--palatinate-purple);
+	color: white;
+	border-radius: 2px;
+	letter-spacing: 0.3em;
+	
+}	
+.infoIcon-schedule{
+	background:  url(../img/SVG/infoIcon-schedule.svg) no-repeat center;
+	width: 45%;
+	height: auto;
+}
+.infoIcon-confirmation{
+	background: url(../img/SVG/infoIcon-confirmation.svg) no-repeat center;
+	width: 45%;
+	height: auto;
+}
+.infoIcon-gifts{
+	background: url(../img/SVG/infoIcon-gifts.svg) no-repeat center;
+	width: 45%;
+	height: auto;
 }
 
 
@@ -468,6 +498,11 @@ q {font-style: italic;}
 
 
 
+
+
+
+
+/*---------------------------------------item4_ENDS------------------------------------*/
 /*------------couple_section--------------*/
 .two-colums{
 	display: grid;
@@ -498,9 +533,6 @@ q {font-style: italic;}
 	margin-right: auto;
 }
 /*------------luckyCouple_section_ENDS--------------*/
-
-
-
 @media screen and (max-width: 768px) {
 	.container{
 		flex-direction: column;
@@ -509,6 +541,7 @@ q {font-style: italic;}
 	}
 	.flex{
 		flex-direction: column;
+		align-items: center;
 	}
 	.hide-on-small {display: none;}
 	.show-on-small{display: block;}	
@@ -606,6 +639,7 @@ q {font-style: italic;}
 		text-align: center;
 		margin: 0;
 	}
+	.profile-main h2{font-size: 2em;padding: 0;}
 	.social-list{
 		float: none;
 		margin: 0 auto;
