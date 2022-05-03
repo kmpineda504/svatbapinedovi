@@ -465,11 +465,11 @@ q {font-style: italic;}
 	color: white;
 	border-radius: 2px;
 	letter-spacing: 0.2em;	
+	transition: 0.2s;
 }	
 #item4 .btn:hover{
-	transform: scale(1.1);	
+	transform: scale(1.2);	
 }	
-
 .infoIcon-schedule{
 	background:  url(../img/SVG/infoIcon-schedule.svg) no-repeat center;
 	width: 45%;
@@ -490,15 +490,15 @@ q {font-style: italic;}
 .gallery{
 	margin: 2%;
 }
-
 .gallery img{
-	transition: 1s;
-	padding: 15px;
-	width: 200px;
+	transition: 0.5s;
+	padding: 2%;
+	width: 250px;
+	filter: grayscale(35%);
 }
 .gallery img:hover{
-	filter: grayscale(100%);
-	transform: scale(1.02);
+	filter: none;
+	transform: scale(1.1);
 }
 
 
