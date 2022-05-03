@@ -464,9 +464,12 @@ q {font-style: italic;}
 	background-color: var(--palatinate-purple);
 	color: white;
 	border-radius: 2px;
-	letter-spacing: 0.3em;
-	
+	letter-spacing: 0.2em;	
 }	
+#item4 .btn:hover{
+	transform: scale(1.1);	
+}	
+
 .infoIcon-schedule{
 	background:  url(../img/SVG/infoIcon-schedule.svg) no-repeat center;
 	width: 45%;
@@ -482,27 +485,58 @@ q {font-style: italic;}
 	width: 45%;
 	height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------item4_ENDS------------------------------------*/
+/*----------------------------------------gallery--------------------------------------*/
+.gallery{
+	margin: 2%;
+}
+
+.gallery img{
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+}
+.gallery img:hover{
+	filter: grayscale(100%);
+	transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------gallery_ENDS-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------couple_section--------------*/
 .two-colums{
 	display: grid;
