@@ -80,12 +80,12 @@
     </div>
     
     
-    <p class="countdown box-shadow" id="demo"></p>
+    <p class="countdown" id="demo"></p>
     
     <section id="home-announcement" class="flex">
         <div class="container flex">
-            <div class="home-announcement-left drop-shadow-medium"></div>
-            <div class="home-announcement-right drop-shadow-large">
+            <div class="home-announcement-left "></div>
+            <div class="home-announcement-right ">
                 <div>
                     <h3>Safe the date</h3>
                     <div class="home-announcement-header">
@@ -109,7 +109,11 @@
     
     <section id="home-about" class="flex">
         <div class="container ">
-            <h2 class="text-align-center">About us</h2>
+            <div>
+                <h2>About us</h2>
+                <p>Once upon a time, there was an adventure…!</p>
+            </div>
+            
             <div class="flex">
                 <div class="card flex box-shadow">
                     <div class="profile-sidebar hide-on-desktop">
@@ -118,9 +122,8 @@
                     <div class="profile-main text-align-right margin-right">
                         <h2>Kevin Pineda</h2>
                         <h3 class="stylish-font">the Groom</h3>
-                        <p>I enjoy music, since my childhood I was learning to play the violin and I sing in NASHI and ETC.
-                            I will never say no to strawberries or to mango, actually to any of the fruit. And I am looking
-                            forward to meeting you at our wedding.</p>
+                        <p>Don't tell anyone, but I'm an pirate/ninja that loves burgers, piña coladas
+                            and gettin' caught in the rain. My hobbies are breakfast, lunch, and Baleadas for dinner. However all I need to survive is Coffee and Semitas.</p>
                         <ul class="social-list float-right">
                             <li><a aria-label="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
                             <li><a aria-label="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
@@ -155,19 +158,25 @@
     <section id="home-quotes">
         <div class="quotes-container box-shadow">
             <div class="myQuotes quote-img-1 darken-blending">
-                <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nam est debitis eius earum ratione! EN
-                    ESPANOL ONLY</q>
-                <p class="author">- Cantares 4:10</p>
+                <div class="container">
+                    <q>Have you seen him whom my soul loves?</q>
+                </div>
+                
+                <p class="author">- Song of Solomon 3:4</p>
             </div>
     
             <div class="myQuotes quote-img-2 darken-blending">
-                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                <p class="author">- Ernest Hemingway</p>
+                <div class="container">
+                    <q>You have captivated my heart, my sister, my bride; you have captivated my heart with one glance of your eyes, with one jewel of your necklace.</q>
+                </div>
+                <p class="author">- Song of Solomon 4:9</p>
             </div>
     
             <div class="myQuotes quote-img-3 darken-blending">
-                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                <p class="author">- Thomas A. Edison</p>
+                <div class="container">
+                    <q>The heart of man plans his way, but the LORD establishes his steps.</q>
+                </div>
+                <p class="author">- Proverbs 16:9</p>
             </div>
             <a class="prev" onclick="plusQuote(-1)">&#10094;</a>
             <a class="next" onclick="plusQuote(1)">&#10095;</a>
@@ -181,34 +190,41 @@
     
     <section id="home-information" class="flex">
         <div class="container">
-            <h2 class="text-align-center">Prepare for the big day</h2>
-            <div class="flex">
+            <div class="flex section-header ">    
+                <div class="text-align-left ">
+                    <h3>Wedding information</h3>
+                    <h2 >Prepare for the big day</h2>
+                </div>   
+                <div class="line-vertical hide-on-small"></div>
+                <div>
+                    <p>Learn more about every detail regarding our wedding from start to end.</a></p>
+                    <a href="" class="btn margin-left">More</a>
+                </div>                            
+            </div>
+            <div class="flex justify-content-center ">
                 <div class="flex flex-column margin-10px">
                     <div class="card text-align-center box-shadow flex flex-column">
                         <svg class="infoIcon-schedule content-align-center"></svg>
                         <h2>Wedding<br />schedule</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam similique perferendis ad
-                            culpa magnam.</p>
+                        <p>Prepare for the big day, by following our wedding plan from start to end.</p>
                     </div>
-                    <div class="content-align-center"><a href="#" class="btn box-shadow">More</a></div>
+                    <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
                 <div class="flex flex-column margin-10px">
                     <div class="card text-align-center box-shadow flex flex-column">
                         <svg class="infoIcon-confirmation content-align-center"></svg>
                         <h2>Confirmation<br />of participation</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam similique perferendis ad
-                            culpa magnam.</p>
+                        <p>Be part of such an important step in our lives. Can we count with you?</p>
                     </div>
-                    <div class="content-align-center"><a href="#" class="btn box-shadow">More</a></div>
+                    <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
                 <div class="flex flex-column margin-10px">
                     <div class="card text-align-center box-shadow flex flex-column">
                         <svg class="infoIcon-gifts content-align-center"></svg>
                         <h2>Wedding<br />gifts</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam similique perferendis ad
-                            culpa magnam.</p>
+                        <p>If you'd like to give us a gift, we have some tips for you.</p>
                     </div>
-                    <div class="content-align-center"><a href="#" class="btn box-shadow">More</a></div>
+                    <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
             </div>
         </div>
@@ -216,8 +232,20 @@
     
     <section id="home-gallery" class="flex">
         <div class="container">
-            <h2 class="text-align-center">Gallery</h2>
-            <div class="gallery text-align-center drop-shadow-medium">
+            <div class="flex section-header ">
+                <div class="text-align-left ">
+                    <h3>Engagement special images</h3>
+                    <h2 >Our Best Captured Moments</h2>
+                </div>   
+                <div class="line-vertical hide-on-small"></div>   
+                <div>
+                    <p>Check our image gallery with photos of our engagement photo shoot by <a href="#">Braulio Lara</a></p>
+                    <a href="" class="btn margin-left">Watch more</a>
+                </div>          
+                
+            </div>
+            
+            <div class="gallery text-align-center">
                 <a href="img/gallery/originalSize01.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize01.jpg"></a>
                 <a href="img/gallery/originalSize02.jpg" data-lightbox="mygallery" class=""><img
@@ -253,8 +281,7 @@
     </section>
     
     <footer id="footer">
-        <div class="container">
-            <div class="line"></div>
+        <div class="container">           
             <div class="flex">
                 <div class="footer-section big-item">               
                     <h2>Contact us</h2>
@@ -278,14 +305,14 @@
                         <div>  
                             <ul class="footer-list">
                                 <li><a href="#">The Wedding</a></li>
-                                <li><a href="#">Wedding schedule</a></li>
-                                <li><a href="#">Location</a></li>
-                                <li><a href="#">Confirmation of participation</a></li>
+                                <li><a href="#">Wedding Schedule</a></li>
+                                <li><a href="#">Wedding Attendance</a></li>
                                 <li><a href="#">Gifts List</a></li>
+                                <li><a href="#">Location</a></li>
                             </ul>
                         </div>
                         <div class="languages-section">
-                            <div class="line"></div>
+                            <div class="line-horizontal"></div>
                             <a href="#" class="language-btn"><i class="flag-icon flag-icon-esp"></i></a>
                             <a href="#" class="language-btn"><i class="flag-icon flag-icon-cze"></i></a>
                             <a href="#"class="language-btn"><i class="flag-icon flag-icon-gbr"></i></a>
