@@ -25,10 +25,9 @@ h2{
 	padding: 4% 0;
 }
 h3{
-	font-weight: lighter;
 	padding: 2% 0;
 }
-p{padding: 10px 0 10px 0;}
+p{padding: 10px 0 10px 0; }
 hr {width: 100%;height: 1px;background-color:var(--tumbleweed);opacity:0.5; border: none;}
 q {font-style: italic;}
 
@@ -40,10 +39,12 @@ q {font-style: italic;}
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 	color: var(--jet);
+	letter-spacing: 0.02vw;
 }
 .align-items-center{align-items: center;}
 .big-item{-webkit-flex: 1.5 0 0; flex: 1.5 0 0;}
 .box-shadow {box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.05);;}
+.bold-text{font-weight: bold;}
 .btn{
 	text-decoration: none;
 	color: var(--palatinate-purple);
@@ -57,6 +58,12 @@ q {font-style: italic;}
 	background-color: var(--palatinate-purple);
 	color: #ffff;
 }
+.card {
+	max-width: auto;
+	padding: 1.5em;
+	margin: 10px;
+	background-color: #ffffff;
+ }
 .container {
 	width: 80%;
 	max-width: 1000px;
@@ -83,7 +90,7 @@ q {font-style: italic;}
 	opacity: 0.2;
 }
 .line-vertical{
-    margin: 0.7em 0;
+    margin: 0.7em;
     width: 3px;
     height: auto;
     background: var(--tumbleweed);
@@ -104,6 +111,7 @@ q {font-style: italic;}
 .text-align-right{text-align: right;}
 .small-item{-webkit-flex: 1 0 0; flex: 1 0 0;}
 .stylish-font{
+	font-weight: lighter;
 	font-family:'Great Vibes', cursive;
 	font-size: 2em;
 	color: var(--honey-yellow);
@@ -351,30 +359,28 @@ q {font-style: italic;}
 	border-right: solid var(--palatinate-purple) 50px;
 }
 .home-announcement-right h2{
-	font-weight: lighter;
+	font-weight: bolder;
 	font-size: 3vw;
 	text-align: center;
 	padding: 5px 0px 5px 0;
 	color: var(--jet);
 }
 .home-announcement-right h3{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-weight: lighter;
+	font-weight:400;
 	font-size: 2vw;
 	text-align: center;
 	color: var(--palatinate-purple);
 	opacity: 85%;
 }
 .home-announcement-right h4{
-	font-weight: lighter;
 	font-size: 1.2vw;
 	text-align: center;
 	color: var(--palatinate-purple);
+	opacity: 85%;
+	padding: 0 10px;
 }
 .home-announcement-right p{
-	font-weight: lighter;
 	text-align: center;
-	color: var(--jet);
 }
 .home-announcement-right .stylish-font{
 	color: var(--honey-yellow);
@@ -384,17 +390,31 @@ q {font-style: italic;}
 	align-items: center;
 	justify-content: center;
 }
+
+.curl-normal{
+	width: 8rem;
+	height: 1.5rem;
+	background-size: 5rem;
+	background: url(../img/SVG/curls_normal.svg) no-repeat center/cover;
+	opacity: 0.5;
+}
+.curl-inverted{
+	width: 8rem;
+	height: 1.5rem;
+	background-size: 5rem;
+	background: url(../img/SVG/curls_inverted.svg) no-repeat center/cover	;
+	opacity: 0.5;
+}
 /*--------------------------------home-announcement_ENDS-----------------------------------*/
 .section-header{
 	padding: 1.5vw;
+	margin: 0 2vw;
 }
 .section-header h2{
 	font-size: 3vw;
-	margin: 0 2vw;
 }
 .section-header h3{
 	padding: auto;
-	margin: 0 2vw;
 	color:  var(--tumbleweed);
 }
 .section-header p{
@@ -407,12 +427,19 @@ q {font-style: italic;}
 #home-about{
 	background-color: none;
 }
-.card {
-	max-width: auto;
-	padding: 1.5em;
-	margin: 10px;
-	background-color: #ffffff;
- }
+#home-about .card{
+	width: 500px;
+}
+#home-about .section-header p,h2{
+	padding: 0;
+}
+.decorative-branches{
+	width: 20rem;
+	height: 6rem;
+	background: url(../img/SVG/decorative-branches.svg) no-repeat center/cover	;
+	background-size: 15rem;
+	margin-top: -1.3rem;
+}
 .profile-image{
 	border-radius: 50%;
 	border: 3px solid var(--palatinate-purple);
@@ -441,6 +468,7 @@ q {font-style: italic;}
 }
 .social-list a:hover{opacity: 1;}
 .social-list i{color: var(--palatinate-purple);}
+
 /*----------------------------------home-about_ENDS------------------------------------*/
 /*---------------------------------------quotes----------------------------------------*/
 .quotes-container {
@@ -474,7 +502,6 @@ q {font-style: italic;}
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
-
 .activeQuote,
 .dotQuote:hover {
 	background-color: var(--honey-yellow);
@@ -571,15 +598,14 @@ q {font-style: italic;}
 .footer-list li{
 	padding: 0.2em;
 }
-
 .language-btn {
 	padding-right: 10px;
 }
-
-
-
-
 /*--------------------------------------footer_ENDS------------------------------------*/
+
+
+
+
 
 .three-colums{
 	display: grid;
@@ -616,6 +642,7 @@ q {font-style: italic;}
 	.home-announcement-right h3{
 		font-size: 3vw;	
 	}
+	.home-announcement-header .flex{flex-direction: row;}
 	.home-announcement-header h2{
 		font-size: 3em;
 	}
@@ -689,9 +716,7 @@ q {font-style: italic;}
 	.navbar a{
 		font-size: 2vw;
 	}
-	.card{
-		max-width: 75%;
-	}
+	.myQuotes q{font-size: 4vw;}
 	#home-information .card{
 		width: 600px;
 	}
@@ -712,6 +737,7 @@ q {font-style: italic;}
 	}
 	.footer-section{
 		width:auto;
+		text-align: center;
 	}
 	#footer .flex{
 		flex-direction: row;
@@ -740,6 +766,18 @@ q {font-style: italic;}
 		display: flex;
   		justify-content: center;
  	 	align-items: center;
+	}
+	.curl-normal{
+		width: 8rem;
+		height: 1.5rem;
+		background-size: 7rem;
+
+	}
+	.curl-inverted{
+		width: 8rem;
+		height: 1.5rem;
+		background-size: 7rem;
+
 	}
 
 }
@@ -772,6 +810,16 @@ q {font-style: italic;}
 	}
 	.navbar a{
 		font-size: 2.5vw;
+	}
+
+	#footer .flex{
+		flex-direction: column;
+	}
+	.footer-list li{
+		text-align: center;
+	}
+	.languages-section a{
+		text-align: center;
 	}
 }
 
