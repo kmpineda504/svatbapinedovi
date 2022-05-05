@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/flag-icon.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <script src="https://kit.fontawesome.com/ba3479834a.js" crossorigin="anonymous"></script>
@@ -88,8 +89,8 @@
     
     <section id="home-announcement" class="flex">
         <div class="container flex">
-            <div class="home-announcement-left "></div>
-            <div class="home-announcement-right ">
+            <div class="home-announcement-left " data-aos="fade-right"></div>
+            <div class="home-announcement-right " data-aos="fade-left">
                 <div>
                     <h3>Safe the date</h3>
                     <div class="home-announcement-header text-align-center">
@@ -112,7 +113,7 @@
     
     <section id="home-about" class="flex">
         <div class="container">
-            <div class="section-header text-align-center flex flex-column">
+            <div class="section-header text-align-center flex flex-column" data-aos="zoom-out">
                 <div class="flex home-about-row justify-content-center align-items-center">
                     <div class="branch-normal"></div>
                     <h2 class="bold-text">About us</h2>
@@ -122,11 +123,11 @@
                 <p>Once upon a time, there was an adventure…!</p>
             </div>
             <div class="flex">
-                <div class="card flex box-shadow">
+                <div class="card flex box-shadow" data-aos="flip-left">
                     <div class="profile-sidebar hide-on-desktop">
                         <img class="profile-image" src="img/portraitGroom.jpg" alt="">
                     </div>
-                    <div class="profile-main text-align-right margin-right">
+                    <div class="profile-main text-align-right margin-right" >
                         <h2>Kevin Pineda</h2>
                         <h3 class="stylish-font">the Groom</h3>
                         <p>Don't tell anyone, but I'm an ninja that loves eating burgers, drinking piña coladas
@@ -141,7 +142,7 @@
                         <img class="profile-image" src="img/portraitGroom.jpg" alt="">
                     </div>
                 </div>
-                <div class="card flex box-shadow">
+                <div class="card flex box-shadow" data-aos="flip-right">
                     <div class="profile-sidebar">
                         <img class="profile-image" src="img/portraitBride.jpg" alt="">
                     </div>
@@ -163,7 +164,7 @@
     </section>
     
     <section id="home-quotes">
-        <div class="quotes-container box-shadow">
+        <div class="quotes-container box-shadow" data-aos="fade">
             <div class="myQuotes quote-img-1 darken-blending">
                 <div class="container">
                     <q>Have you seen him whom my soul loves?</q>
@@ -195,18 +196,18 @@
     <section id="home-information" class="flex">
         <div class="container">
             <div class="flex section-header ">    
-                <div class="text-align-left ">
+                <div class="text-align-left " data-aos="fade-left">
                     <h3>Wedding information</h3>
                     <h2 >Prepare for the big day</h2>
                 </div>   
-                <div class="line-vertical hide-on-small"></div>
-                <div>
+                <div class="line-vertical hide-on-small" data-aos="zoom-in"></div>
+                <div data-aos="fade-right">
                     <p>Learn more about every detail regarding our wedding from start to end.</a></p>
                     <a href="" class="btn margin-left">Learn more</a>
                 </div>                            
             </div>
             <div class="flex justify-content-center ">
-                <div class="flex flex-column margin-10px">
+                <div class="flex flex-column margin-10px" data-aos="zoom-in-up">
                     <div class="card text-align-center box-shadow flex flex-column">
                         <svg class="infoIcon-schedule content-align-center"></svg>
                         <h2>Wedding<br />schedule</h2>
@@ -214,7 +215,7 @@
                     </div>
                     <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
-                <div class="flex flex-column margin-10px">
+                <div class="flex flex-column margin-10px" data-aos="zoom-in-down">
                     <div class="card text-align-center box-shadow flex flex-column">
                         <svg class="infoIcon-confirmation content-align-center"></svg>
                         <h2>Confirmation<br />of participation</h2>
@@ -222,7 +223,7 @@
                     </div>
                     <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
-                <div class="flex flex-column margin-10px">
+                <div class="flex flex-column margin-10px" data-aos="zoom-in-up">
                     <div class="card text-align-center box-shadow flex flex-column">
                         <svg class="infoIcon-gifts content-align-center"></svg>
                         <h2>Wedding<br />gifts</h2>
@@ -236,20 +237,20 @@
     
     <section id="home-gallery" class="flex">
         <div class="container">
-            <div class="flex section-header">
+            <div class="flex section-header" data-aos="fade-left">
                 <div class="text-align-left">
                     <h3 >Engagement special images</h3>
                     <h2 >Our Best Captured Moments</h2>
                 </div>   
-                <div class="line-vertical hide-on-small"></div>   
-                <div>
+                <div class="line-vertical hide-on-small" data-aos="fade-up"></div>   
+                <div data-aos="slide-right">
                     <p>Check our image gallery with photos of our engagement photo shoot by <a href="#">Braulio Lara</a></p>
                     <a href="" class="btn margin-left">Watch more</a>
                 </div>          
                 
             </div>
             
-            <div class="gallery text-align-center">
+            <div class="gallery text-align-center" data-aos="zoom-out-up">
                 <a href="img/gallery/originalSize01.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize01.jpg"></a>
                 <a href="img/gallery/originalSize02.jpg" data-lightbox="mygallery" class=""><img
@@ -332,6 +333,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
