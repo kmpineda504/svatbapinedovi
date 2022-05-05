@@ -85,9 +85,9 @@ q {font-style: italic;}
 .justify-content-center{justify-content: center;}
 .line-horizontal{
     margin: 0.7em 0;
-    width: auto;
+    width: 50%;
     height:1px;;
-    background: var(--jet);
+    background: var(--tumbleweed);
 	opacity: 0.2;
 }
 .line-vertical{
@@ -636,6 +636,18 @@ q {font-style: italic;}
 }
 /*--------------------------------------footer_ENDS------------------------------------*/
 
+#gallery-gallery .section-header h2, h3, p{
+	padding: 0.5rem;
+}
+
+#gallery-gallery .section-header h2::after{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 5em;
+	background-color: var(--tumbleweed);
+	margin: 0.5em auto;
+}
 
 
 
