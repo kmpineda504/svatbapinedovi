@@ -63,6 +63,7 @@ q {font-style: italic;}
 	padding: 1.5em;
 	margin: 10px;
 	background-color: #ffffff;
+	border: 1px solid #ebe7ee;
  }
 .container {
 	width: 80%;
@@ -328,10 +329,19 @@ q {font-style: italic;}
 }
 /*------------------------accordionNavigationBar_ENDS--------------------------------*/
 /*------------------------------countdownTimer---------------------------------------*/
+#home-countdown{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: url(../img/SVG/bg-01.svg) center;
+	z-index: -1;
+}
 .countdown{
 	text-align: center;
   	font-size: 60px;
   	margin: 2%;
+	background-color: white;
+	border: 1px solid #ebe7ee;
 }
 /*----------------------------countdownTimer_ENDS-----------------------------------*/
 /*------------------------------home-announcement-----------------------------------*/
@@ -356,6 +366,7 @@ q {font-style: italic;}
 	justify-content: center;
 	padding: 30px;
 	margin-left: -45px;
+	border: 1px solid #ebe7ee;
 	border-right: solid var(--palatinate-purple) 50px;
 }
 .home-announcement-right h2{
@@ -384,6 +395,8 @@ q {font-style: italic;}
 }
 .home-announcement-right .stylish-font{
 	color: var(--honey-yellow);
+	font-size: 2.5rem;
+	margin-top: -2vw;
 }
 .home-announcement-right .three-colums{
 	grid-template-columns: 1fr 0.4fr 1fr;
@@ -424,14 +437,22 @@ q {font-style: italic;}
 }
 
 /*-------------------------------------home-about------------------------------------------*/
-#home-about{
-	background-color: none;
-}
 #home-about .card{
 	width: 500px;
 }
-#home-about .section-header p,h2{
+#home-about .section-header p{
 	padding: 0;
+}
+#home-about .section-header h2{
+	font-size: 3vw;
+}
+#home-about p::after{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 2em;
+	background-color: var(--tumbleweed);
+	margin: 0.5em auto;
 }
 .decorative-branches{
 	width: 20rem;
@@ -439,6 +460,18 @@ q {font-style: italic;}
 	background: url(../img/SVG/decorative-branches.svg) no-repeat center/cover	;
 	background-size: 15rem;
 	margin-top: -1.3rem;
+}
+.branch-normal{
+	width: 10rem;
+	height: 8rem;
+	background-size: 1rem;
+	background: url(../img/SVG/branch_normal.svg) no-repeat center	;
+}
+.branch-inverted{
+	width: 10rem;
+	height: 8rem;
+	background-size: 1rem;
+	background: url(../img/SVG/branch_inverted.svg) no-repeat center;
 }
 .profile-image{
 	border-radius: 50%;
@@ -637,7 +670,7 @@ q {font-style: italic;}
 		margin: 0;
 		margin-top: -100px;
 		border-top: solid var(--palatinate-purple) 50px;
-		border-right: none;
+		border-right: 1px solid #ebe7ee;;
 	}
 	.home-announcement-right h3{
 		font-size: 3vw;	
@@ -649,6 +682,10 @@ q {font-style: italic;}
 	.home-announcement-header h4{
 		font-size: 1.2em;
 	}
+	.home-about-row{
+		flex-direction: row;
+	}
+	#home-about .home-about-row h2{font-size: 2.5em;}
 	.myslide {
 		height: 50vh;
 	}
