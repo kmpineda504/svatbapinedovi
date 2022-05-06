@@ -18,14 +18,15 @@
 <body>
     <header>
         <div class="slider">
+            
             <div class="slideShowTxt">
                 <h1>Kevin & Anežka</h1>
                 <p>Are getting married<br>September 24, 2022</p>
             </div>
             <!--fade css-->
-            <div class="myslide fade"><img src="img/imgSlideShow01.jpg"></div>
-            <div class="myslide fade"><img src="img/imgSlideShow02.jpg"></div>
-            <div class="myslide fade"><img src="img/imgSlideShow03.jpg"></div>
+            <div class="myslide fade"><img src="img/imgSlideShow01.jpg" class="imgSlideShow"></div>
+            <div class="myslide fade"><img src="img/imgSlideShow02.jpg" class="imgSlideShow"></div>
+            <div class="myslide fade"><img src="img/imgSlideShow03.jpg" class="imgSlideShow"></div>
             <!--fade css-->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -78,7 +79,7 @@
             </div>
         </div>
     </div>
-    
+
     <section id="home-countdown">
         <div class="container">
             <p class="countdown box-shadow" id="demo"></p>
@@ -86,6 +87,18 @@
         </div>
     </section>
     
+    <section id="home-announcement">
+        <div class="flex">
+            <div>
+                <img src="img/safeTheDate_section_edited@2x.jpg" alt="">
+            </div>
+            <div>
+                <h3>Safe the date</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!---
     <section id="home-announcement" class="flex">
         <div class="container flex">
             <div class="home-announcement-left " data-aos="fade-right"></div>
@@ -108,8 +121,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     
+    
+
     <section id="home-about" class="flex">
         <div class="container">
             <div class="section-header text-align-center flex flex-column" data-aos="zoom-out">
