@@ -107,7 +107,6 @@ q {font-style: italic;}
 	opacity: 1;
 	width: 3px;
 }
-
 .hidden{display: none;}
 .hide-on-desktop{display: none;}
 .margin-10px{margin: 10px;}
@@ -131,16 +130,6 @@ q {font-style: italic;}
 }
 
 /*-----------------------------headerSlideShow----------------------------------*/
-.active {
-	background-color: var(--honey-yellow);
-}
-.dotsbox {
-	bottom: 20px;
-	cursor: pointer;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%);
-}
 .dot {
 	background-color: #ffffff;
 	border-radius: 50%;
@@ -150,9 +139,14 @@ q {font-style: italic;}
 	margin: 0 10px;
 	width: 7px;
 }
-.dot:hover {
-	background-color: var(--hoverGolden-color);
+.dotsbox {
+	bottom: 20px;
+	cursor: pointer;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%);
 }
+.active, .dot:hover{background-color: var(--honey-yellow);}
 .fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
@@ -160,22 +154,12 @@ q {font-style: italic;}
 	-webkit-animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-	from {
-		opacity: 0.3
-	}
-
-	to {
-		opacity: 0.9
-	}
+	from {opacity: 0.3}
+	to {opacity: 0.9}
 }
 @keyframes fade {
-	from {
-		opacity: 0.3
-	}
-
-	to {
-		opacity: 0.9
-	}
+	from {opacity: 0.3}
+	to {opacity: 0.9}
 }
 .imgSlideShow {
 	animation-name: zoomin;
@@ -185,22 +169,12 @@ q {font-style: italic;}
 	-webkit-animation-duration: 80s;
 }
 @-webkit-keyframes zoomin {
-	from {
-		transform: scale(1, 1);
-	}
-
-	to {
-		transform: scale(2, 2);
-	}
+	from {transform: scale(1, 1);}
+	to {transform: scale(2, 2);}
 }
 @keyframes zoomin {
-	from {
-		transform: scale(1, 1);
-	}
-
-	to {
-		transform: scale(2, 2);
-	}
+	from {transform: scale(1, 1);}
+	to {transform: scale(2, 2);}
 }
 .myslide {
 	display: none;
@@ -225,12 +199,8 @@ q {font-style: italic;}
 	user-select: none;
 }
 .prev:hover,
-.next:hover {
-	color: var(--honey-yellow);
-}
-.next {
-	right: 0;
-}
+.next:hover {color: var(--honey-yellow);}
+.next {right: 0;}
 .slider {
 	background: #000000;
 	position: relative;
@@ -272,7 +242,6 @@ q {font-style: italic;}
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
-
 /*------------------------headerSlideShow_ENDS-------------------------------------*/
 
 
@@ -506,19 +475,19 @@ q {font-style: italic;}
 
 
 /*---------------------------------------quotes----------------------------------------*/
+.dotQuote {
+	cursor: pointer;
+	height: 7px;
+	width: 7px;
+	margin: 0 0.7em;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
 .activeQuote,
 .dotQuote:hover {
 	background-color: var(--honey-yellow);
-}
-.dotQuote {
-	background-color: #fff;
-	border-radius: 50%;
-	cursor: pointer;
-	display: inline-block;
-	height: 7px;
-	margin: 0 0.7em;
-	transition: background-color 0.6s ease;
-	width: 7px;
 }
 .myQuotes {
 	display: none;
@@ -531,9 +500,6 @@ q {font-style: italic;}
 .quote-img-1{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG1.jpg) fixed no-repeat center/cover;}
 .quote-img-2{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG2.jpg) fixed no-repeat center/cover;}
 .quote-img-3{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG3.jpg) fixed no-repeat center/cover;}
-
-
-
 /*---------------------------------------quote_ENDS------------------------------------*/
 /*------------------------------------home-information---------------------------------*/
 #home-information{background-color: none;}
@@ -592,32 +558,14 @@ q {font-style: italic;}
 	list-style: none;
 	width: auto;
 }
-.footer-section a{
-	text-decoration: none;
-}
-.footer-section a:hover{
-	color: var(--palatinate-purple);
-}
-.footer-section i{
-	color: var(--palatinate-purple);
-}
-.footer-list li{
-	padding: 0.2em;
-}
-.language-btn {
-	padding-right: 10px;
-}
+.footer-section a{text-decoration: none;}
+.footer-section a:hover{color: var(--palatinate-purple);}
+.footer-section i{color: var(--palatinate-purple);}
+.footer-list li{padding: 0.2em;}
+.language-btn {padding-right: 10px;}
 /*--------------------------------------footer_ENDS------------------------------------*/
 
-#gallery-gallery .section-header h2, h3, p{
-	padding: 0.5rem;
-}
-
-
-
-
-
-
+#gallery-gallery .section-header h2, h3, p{padding: 0.5rem;}
 
 @media screen and (max-width: 768px) {
 	.container{
@@ -839,4 +787,3 @@ q {font-style: italic;}
 		text-align: center;
 	}
 }
-
