@@ -77,6 +77,22 @@ q {font-style: italic;}
 .float-left{float: left;}
 .float-right{float: right;}
 .justify-content-center{justify-content: center;}
+.line-detail-h::after{
+	background-color: var(--tumbleweed);
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0.5em auto;
+	width: 2em;
+}
+.line-detail-p::after{	
+	background-color: var(--tumbleweed);
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0.5em auto;
+	width: 2em;
+}
 .line-horizontal{
 	background: var(--tumbleweed);
 	height:1px;
@@ -87,10 +103,11 @@ q {font-style: italic;}
 .line-vertical{	
 	background: var(--tumbleweed);
 	height: auto;
-	margin: 0.7em;
-	opacity: 0.8;
+	margin: 1em;
+	opacity: 1;
 	width: 3px;
 }
+
 .hidden{display: none;}
 .hide-on-desktop{display: none;}
 .margin-10px{margin: 10px;}
@@ -101,14 +118,6 @@ q {font-style: italic;}
 .padding-left{padding-left: 1.5rem;}
 .padding-right{padding-right: 1.5rem;}
 .padding-top{padding-top: 1.5rem;}
-.p-detail::after{	
-	background-color: var(--tumbleweed);
-	content: "";
-	display: block;
-	height: 2px;
-	margin: 0.5em auto;
-	width: 2em;
-}
 .rotate-text{transform: rotate(-10deg);}
 .small-item{-webkit-flex: 1 0 0; flex: 1 0 0;}
 .text-align-center{text-align: center; }
@@ -339,10 +348,12 @@ q {font-style: italic;}
 /*------------------------accordionNavigationBar_ENDS--------------------------------*/
 /*------------------------------countdownTimer---------------------------------------*/
 #home-countdown{
+	/*background: url(../img/SVG/bg-floralPattern-04.svg) center/cover;*/
 	height: auto;
+	margin-bottom: -3rem;
 	position: relative;
 	width: 100%;
-	z-index: -1;
+	z-index: 1;
 }
 .countdown{
 	font-size: 4vw;
@@ -354,13 +365,22 @@ q {font-style: italic;}
 /*------------------------------home-announcement-----------------------------------*/
 #home-announcement {
 	align-items: center;
+	background-color: #ebe7ee;
 	justify-content: center;
 	min-height: 100vh;
 	width: 100%;
 }
+#home-announcement .line-vertical{
+	background: var(--tumbleweed);
+	height: 20rem;
+	margin: 1em;
+	opacity: 1;
+	width: 3px;
+}
+
 .home-announcement-left{
 	background: url(../img/safeTheDate_section_edited@2x.jpg) no-repeat center/cover;
-	height: 40vw;
+	height: 50vw;
 	width: 80%;
 }
 .home-announcement-right{
@@ -428,16 +448,19 @@ q {font-style: italic;}
 }
 
 /*-------------------------------------home-about------------------------------------------*/
-.branch-left{
-	background: url(../img/SVG/branch_left.svg) no-repeat center;
-}
-.branch-right{
-	background: url(../img/SVG/branch_right.svg) no-repeat center;
-}
+.branch-left{	background: url(../img/SVG/branch_left.svg)		no-repeat center;}
+.branch-right{	background: url(../img/SVG/branch_right.svg)	no-repeat center;}
+.leaf-left{		background: url(../img/SVG/leaf_left.svg)		no-repeat center;}
+.leaf-right{	background: url(../img/SVG/leaf_right.svg)		no-repeat center;}
 .decorative-branches{
 	background-size: 10rem;
 	height: 8rem;
 	width: 10rem;
+}
+.decorative-leaves{
+	background-size: 5rem;
+	height: 5rem;
+	width: 5rem;
 }
 #home-about .card{
 	width: 500px;
@@ -593,14 +616,6 @@ q {font-style: italic;}
 	padding: 0.5rem;
 }
 
-#gallery-gallery .section-header h2::after{
-	content: "";
-	display: block;
-	height: 2px;
-	width: 5em;
-	background-color: var(--tumbleweed);
-	margin: 0.5em auto;
-}
 
 
 
@@ -639,10 +654,16 @@ q {font-style: italic;}
 	.home-announcement-header h4{
 		font-size: 1.2em;
 	}
-	.home-about-row{
+	.flex-always-row {
 		flex-direction: row;
 	}
-	#home-about .home-about-row h2{font-size: 2.5em;}
+	#home-about .section-header h2{
+		font-size: 2.5em;
+	}
+
+	#home-countdown h2{
+		font-size: 2.5em;
+	}
 	.myslide {
 		height: 50vh;
 	}
@@ -804,6 +825,9 @@ q {font-style: italic;}
 	}
 	.navbar a{
 		font-size: 2.5vw;
+	}
+	#home-about .section-header h2{
+		font-size: 3em;
 	}
 	#home-information .card{
 		width: 75%;
