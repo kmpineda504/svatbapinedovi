@@ -81,9 +81,9 @@ q {font-style: italic;}
 	background-color: var(--tumbleweed);
 	content: "";
 	display: block;
-	height: 2px;
+	height: 3px;
 	margin: 0.5em auto;
-	width: 2em;
+	width: 4em;
 }
 .line-detail-p::after{	
 	background-color: var(--tumbleweed);
@@ -256,7 +256,7 @@ q {font-style: italic;}
 	display: none;
 	min-width: 250px;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 }
 .dropdown-content a {
 	display: block;
@@ -316,12 +316,10 @@ q {font-style: italic;}
 }
 /*------------------------accordionNavigationBar_ENDS--------------------------------*/
 /*------------------------------countdownTimer---------------------------------------*/
-#home-countdown{
-	/*background: url(../img/SVG/bg-floralPattern-04.svg) center/cover;*/
-	height: auto;
-	/*margin-bottom: -3rem;*/
+#about-countdown, #home-countdown{
+	margin-bottom: -3.5rem;
 	position: relative;
-	width: 100%;
+	z-index: 1;
 }
 .countdown{
 	font-size: 4vw;
@@ -348,7 +346,7 @@ q {font-style: italic;}
 
 .home-announcement-left{
 	background: url(../img/safeTheDate_section_edited@2x.jpg) no-repeat center/cover;
-	height: 50vw;
+	height: 40vw;
 	width: 80%;
 }
 .home-announcement-right{
@@ -362,7 +360,7 @@ q {font-style: italic;}
 	min-height: 450px;
 	padding: 30px;
 	text-align: center;
-	width: 60%;
+	width: 70%;
 }
 .home-announcement-right h2{
 	font-weight: bolder;
@@ -565,7 +563,20 @@ q {font-style: italic;}
 .language-btn {padding-right: 10px;}
 /*--------------------------------------footer_ENDS------------------------------------*/
 
+
+.about-information-bg{
+	background: url(../img/about-information-bg.jpg) no-repeat center/cover;
+	width: auto;
+	height: 15rem;
+}
+
+
 #gallery-gallery .section-header h2, h3, p{padding: 0.5rem;}
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 	.container{
