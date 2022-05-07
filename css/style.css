@@ -350,10 +350,9 @@ q {font-style: italic;}
 #home-countdown{
 	/*background: url(../img/SVG/bg-floralPattern-04.svg) center/cover;*/
 	height: auto;
-	margin-bottom: -3rem;
+	/*margin-bottom: -3rem;*/
 	position: relative;
 	width: 100%;
-	z-index: 1;
 }
 .countdown{
 	font-size: 4vw;
@@ -365,7 +364,7 @@ q {font-style: italic;}
 /*------------------------------home-announcement-----------------------------------*/
 #home-announcement {
 	align-items: center;
-	background-color: #ebe7ee;
+	/*background-color: var(--languid-lavender);*/
 	justify-content: center;
 	min-height: 100vh;
 	width: 100%;
@@ -528,9 +527,7 @@ q {font-style: italic;}
 }
 .myQuotes-author {color: var(--honey-yellow);}
 .myQuotes-quote {color: white; font-size: 1.7vw;}
-.quotes-container {
-	position: relative;
-}
+.quotes-container {position: relative;}
 .quote-img-1{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG1.jpg) fixed no-repeat center/cover;}
 .quote-img-2{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG2.jpg) fixed no-repeat center/cover;}
 .quote-img-3{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG3.jpg) fixed no-repeat center/cover;}
@@ -574,7 +571,7 @@ q {font-style: italic;}
 .gallery img:hover{filter: none; transform: scale(1.1);}
 /*--------------------------------------gallery_ENDS-----------------------------------*/
 /*----------------------------------------footer---------------------------------------*/
-#footer{background-color: #ebe7ee;}
+#footer{background-color: var(--languid-lavender);}
 .footer-section{
 	width:22%;
     display:block;
