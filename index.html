@@ -19,17 +19,16 @@
     <header>
         <div class="slider">
             <div class="slideShowTxt">
-                <h1>Kevin & Anežka</h1>
-                <p>Are getting married<br>September 24, 2022</p>
+                <!--<h1>We're getting married</h1>-->
             </div>
             <!--fade css-->
-            <div class="myslide fade"><img src="img/imgSlideShow01.jpg"></div>
-            <div class="myslide fade"><img src="img/imgSlideShow02.jpg"></div>
-            <div class="myslide fade"><img src="img/imgSlideShow03.jpg"></div>
+            <div class="myslide fade"><img src="img/imgSlideShow01.jpg" class="imgSlideShow"></div>
+            <div class="myslide fade"><img src="img/imgSlideShow02.jpg" class="imgSlideShow"></div>
+            <div class="myslide fade"><img src="img/imgSlideShow03.jpg" class="imgSlideShow"></div>
             <!--fade css-->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class="dotsbox" style="text-align:center">
+            <div class="dotsbox text-align-center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
@@ -41,7 +40,7 @@
         <ul>
             <li><a aria-current="page" href="index.html">Home</a></li>
             <li class="dropdown">
-                <div class="dropbtn"><a href="about.html">About</a><a class="fa-solid fa-chevron-down paddingLeft"></a></div>
+                <div class="dropbtn"><a href="about.html">About</a><a class="fa-solid fa-chevron-down padding-left"></a></div>
                 <div class="dropdown-content box-shadow">
                     <a href="about.html#about-information">The wedding</a>
                     <a href="about.html#about-schedule">Wedding schedule</a>
@@ -52,8 +51,8 @@
             </li>
             <li class="dropdown">
                 <div class="dropbtn"><a href="confirmation.html">Confirmation & Gifts</a><a
-                        class="fa-solid fa-chevron-down paddingLeft"></a></div>
-                <div class="dropdown-content box-shadow">
+                        class="fa-solid fa-chevron-down padding-left"></a></div>
+                <div class="dropdown-content box-shadow ">
                     <a href="confirmation.html#wedding-attendance">Confirmation of participation</a>
                     <a href="confirmation.html#wedding-gifts">Wedding gifts</a>
                 </div>
@@ -79,50 +78,58 @@
         </div>
     </div>
     
-    <section id="home-countdown">
+
+
+    
+    <section id="home-countdown" class="drop-shadow" data-aos="fade" data-aos-delay="150">
         <div class="container">
-            <p class="countdown box-shadow" id="demo"></p>
-            <h2 class="text-align-center">Countdown until we become Mr. & Mrs. 🤵👰 </h2>
+            <div class="card box-shadow text-align-center">
+                <div class="flex flex-always-row justify-content-center align-items-center">
+                    <div class="decorative-leaves "></div>
+                    <h2 class="countdown" id="demo" ></h2>  
+                    <div class="decorative-leaves "></div>
+                </div>
+                <p class="text-align-center line-detail-p">Countdown until we become Mr. & Mrs. 🤵 👰 </p>
+            </div>
         </div>
     </section>
-    
+
     <section id="home-announcement" class="flex">
         <div class="container flex">
             <div class="home-announcement-left " data-aos="fade-right"></div>
-            <div class="home-announcement-right " data-aos="fade-left">
+            <div class="home-announcement-right " data-aos="fade-left" data-aos-delay="200">
                 <div>
                     <h3>Safe the date</h3>
                     <div class="home-announcement-header text-align-center">
                         <h2>Kevin</h2>
                         <div class="flex justify-content-center">
-                            <div class="curl-normal"></div>
+                            <div class="curl "></div>
                             <h4>and</h4>
-                            <div class="curl-inverted"></div>
+                            <div class="curl "></div>
                         </div>
                         <h2>Anežka's</h2>
                     </div>
-                    <p class="stylish-font bold-text rotate-text">Wedding</p>
                     <h3 class="padding-bottom">24. September 2022</h3>
                     <p class="text-align-center hide-on-small">At 13 O'clock in the evening. Kostel Nanebevzetí Panny Marie Komenského, 537 01 Chrudim</p>
-                    <div class="text-align-center"><a href="#" class="btn">Read more</a></div>
+                    <div class="text-align-center margin-10px"><a href="about.html#about-information" class="btn">Read more</a></div>
                 </div>
             </div>
         </div>
     </section>
+
     
     <section id="home-about" class="flex">
         <div class="container">
             <div class="section-header text-align-center flex flex-column" data-aos="zoom-out">
-                <div class="flex home-about-row justify-content-center align-items-center">
-                    <div class="branch-normal"></div>
+                <div class="flex flex-always-row justify-content-center align-items-center">
+                    <div class="decorative-branches"></div><!--branch-left-->
                     <h2 class="bold-text">About us</h2>
-                    <div class="branch-inverted"></div>
+                    <div class="decorative-branches " ></div><!--branch-right-->
                 </div>
-                <!-- <div class="decorative-branches content-align-center"></div>-->
-                <p>Once upon a time, there was an adventure…!</p>
+                <p class="line-detail-p">Once upon a time, there was an adventure…!</p>
             </div>
             <div class="flex">
-                <div class="card flex box-shadow" data-aos="flip-left">
+                <div class="card flex box-shadow" data-aos="flip-left" data-aos-delay="150">
                     <div class="profile-sidebar hide-on-desktop">
                         <img class="profile-image" src="img/portraitGroom.jpg" alt="">
                     </div>
@@ -132,16 +139,16 @@
                         <p>Don't tell anyone, but I'm an ninja that loves eating burgers, drinking piña coladas
                             and gettin' caught in the rain. My hobbies are breakfast, lunch, and <a href="">baleadas</a> for dinner. Most favorite song ever is Africa by Toto.</p>
                         <ul class="social-list float-right">
-                            <li><a aria-label="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a aria-label="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a aria-label="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a aria-label="facebook" href="https://www.facebook.com/kmpineda504" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a aria-label="instagram" href="https://www.instagram.com/kmpineda504" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a aria-label="twitter" href="https://www.twitter.com/kmpineda504" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                     <div class="profile-sidebar hide-on-small">
                         <img class="profile-image" src="img/portraitGroom.jpg" alt="">
                     </div>
                 </div>
-                <div class="card flex box-shadow" data-aos="flip-right">
+                <div class="card flex box-shadow" data-aos="flip-right" data-aos-delay="350">
                     <div class="profile-sidebar">
                         <img class="profile-image" src="img/portraitBride.jpg" alt="">
                     </div>
@@ -152,35 +159,35 @@
                             I will never say no to strawberries or to mango, actually to any of the fruit. And I am looking
                             forward to meeting you at our wedding.</p>
                         <ul class="social-list float-left">
-                            <li><a aria-label="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a aria-label="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a aria-label="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a aria-label="facebook" href="https://www.facebook.com/anezkabu" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    
     
     <section id="home-quotes">
         <div class="quotes-container box-shadow" data-aos="fade">
             <div class="myQuotes quote-img-1 darken-blending">
                 <div class="container">
-                    <q>Have you seen him whom my soul loves?</q>
+                    <q class="myQuotes-quote">Have you seen him whom my soul loves?</q>
                 </div> 
-                <p class="author">- Song of Solomon 3:4</p>
+                <p class="myQuotes-author">- Song of Solomon 3:4</p>
             </div>
             <div class="myQuotes quote-img-2 darken-blending">
                 <div class="container">
-                    <q>You have captivated my heart, my sister, my bride; you have captivated my heart with one glance of your eyes, with one jewel of your necklace.</q>
+                    <q class="myQuotes-quote">You have captivated my heart, my sister, my bride; you have captivated my heart with one glance of your eyes, with one jewel of your necklace.</q>
                 </div>
-                <p class="author">- Song of Solomon 4:9</p>
+                <p class="myQuotes-author">- Song of Solomon 4:9</p>
             </div>
             <div class="myQuotes quote-img-3 darken-blending">
                 <div class="container">
-                    <q>The heart of man plans his way, but the LORD establishes his steps.</q>
+                    <q class="myQuotes-quote">The heart of man plans his way, but the LORD establishes his steps.</q>
                 </div>
-                <p class="author">- Proverbs 16:9</p>
+                <p class="myQuotes-author">- Proverbs 16:9</p>
             </div>
             <a class="prev" onclick="plusQuote(-1)">&#10094;</a>
             <a class="next" onclick="plusQuote(1)">&#10095;</a>
@@ -200,35 +207,35 @@
                     <h2 >Prepare for the big day</h2>
                 </div>   
                 <div class="line-vertical hide-on-small" data-aos="zoom-in"></div>
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" data-aos-delay="300">
                     <p>Learn more about every detail regarding our wedding from start to end.</a></p>
-                    <a href="" class="btn margin-left">Learn more</a>
+                    <a href="about.html" class="btn margin-left">Learn more</a>
                 </div>                            
             </div>
             <div class="flex justify-content-center ">
-                <div class="flex flex-column margin-10px" data-aos="zoom-in-up">
+                <div class="flex flex-column margin-10px" data-aos="zoom-in-up" data-aos-delay="250" >
                     <div class="card text-align-center box-shadow flex flex-column">
-                        <svg class="infoIcon-schedule content-align-center"></svg>
+                        <svg class="infoIcon infoIcon-schedule content-align-center"></svg>
                         <h2>Wedding<br />schedule</h2>
                         <p>Prepare for the big day, by following our wedding plan from start to end.</p>
                     </div>
-                    <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
+                    <div class="content-align-center"><a href="about.html#about-schedule" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
-                <div class="flex flex-column margin-10px" data-aos="zoom-in-down">
+                <div class="flex flex-column margin-10px" data-aos="zoom-in-down" data-aos-delay="350">
                     <div class="card text-align-center box-shadow flex flex-column">
-                        <svg class="infoIcon-confirmation content-align-center"></svg>
+                        <svg class="infoIcon infoIcon-confirmation content-align-center"></svg>
                         <h2>Confirmation<br />of participation</h2>
                         <p>Be part of such an important step in our lives. Can we count with you?</p>
                     </div>
-                    <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
+                    <div class="content-align-center"><a href="confirmation.html#wedding-attendance" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
-                <div class="flex flex-column margin-10px" data-aos="zoom-in-up">
+                <div class="flex flex-column margin-10px" data-aos="zoom-in-up" data-aos-delay="400">
                     <div class="card text-align-center box-shadow flex flex-column">
-                        <svg class="infoIcon-gifts content-align-center"></svg>
+                        <svg class="infoIcon infoIcon-gifts content-align-center"></svg>
                         <h2>Wedding<br />gifts</h2>
                         <p>If you'd like to give us a gift, we have some tips for you.</p>
                     </div>
-                    <div class="content-align-center"><a href="#" class="btn btn-secondary box-shadow">More</a></div>
+                    <div class="content-align-center"><a href="confirmation.html#wedding-gifts" class="btn btn-secondary box-shadow">More</a></div>
                 </div>
             </div>
         </div>
@@ -242,14 +249,14 @@
                     <h2 >Our Best Captured Moments</h2>
                 </div>   
                 <div class="line-vertical hide-on-small" data-aos="fade-up"></div>   
-                <div data-aos="fade-right" >
+                <div data-aos="fade-right" data-aos-delay="300" >
                     <p>Check our image gallery with photos of our engagement photo shoot by <a href="#">Braulio Lara</a></p>
                     <a href="gallery.html" class="btn margin-left">Watch more</a>
                 </div>          
                 
             </div>
             
-            <div class="gallery text-align-center" data-aos="zoom-out-up">
+            <div class="gallery text-align-center" data-aos="zoom-out-up" data-aos-delay="400">
                 <a href="img/gallery/originalSize01.jpg" data-lightbox="mygallery" class=""><img
                         src="img/gallery/smallSize01.jpg"></a>
                 <a href="img/gallery/originalSize02.jpg" data-lightbox="mygallery" class=""><img
@@ -287,7 +294,7 @@
     <footer id="footer">
         <div class="container">           
             <div class="flex">
-                <div class="footer-section big-item">               
+                <div class="footer-section  big-item">               
                     <h2>Contact us</h2>
                     <div class="flex align-items-center">
                         <i class="fa-solid fa-location-dot"></i>
@@ -308,7 +315,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-section small-item">
+                <div class="footer-section text-align-left small-item">
                     <h2>Helpful links</h2>
                     <div class="flex flex-column">
                         <div>  
@@ -328,15 +335,12 @@
                         </div>
                     </div> 
                 </div>
-                
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
