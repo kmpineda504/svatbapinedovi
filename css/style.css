@@ -573,7 +573,10 @@ q {font-style: italic;}
 
 #gallery-gallery .section-header h2, h3, p{padding: 0.5rem;}
 
-
+#map {
+	height: 400px;
+	width: 100%;
+}
 
 
 
