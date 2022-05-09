@@ -94,7 +94,7 @@ q {font-style: italic;}
 	width: 2em;
 }
 .line-horizontal{
-	background: var(--tumbleweed);
+	background: var(--jet);
 	height:1px;
 	opacity: 0.2;
 	width: 50%;
@@ -535,7 +535,7 @@ q {font-style: italic;}
 .gallery img:hover{filter: none; transform: scale(1.1);}
 /*--------------------------------------gallery_ENDS-----------------------------------*/
 /*----------------------------------------footer---------------------------------------*/
-#footer{background-color: var(--languid-lavender);}
+#footer{background-color: var(--lightGrey-color);}
 .footer-section{
 	width:22%;
     display:block;
@@ -593,39 +593,31 @@ q {font-style: italic;}
 	}
 	.hide-on-small {display: none;}
 	.hide-on-desktop{display: block;}
+	#about-countdown, #home-countdown{
+		margin-bottom: -3rem;
+		position: relative;
+		z-index: 1;
+	}
 	.home-announcement-left{
 		width: 90%;
+		height: 350px;
 	}
 	.home-announcement-right{
 		width: 75%;
 		margin: 0;
-		margin-top: -100px;
-		border-top: solid var(--palatinate-purple) 50px;
+		margin-top: -65px;
+		border-top: solid var(--palatinate-purple) 45px;
 		border-right: 1px solid #ebe7ee;;
 	}
-	.home-announcement-right h3{
-		font-size: 3vw;	
-	}
+	.home-announcement-right h3{font-size: 3vw;	}
 	.home-announcement-header .flex{flex-direction: row;}
-	.home-announcement-header h2{
-		font-size: 3em;
-	}
-	.home-announcement-header h4{
-		font-size: 1.2em;
-	}
-	.flex-always-row {
-		flex-direction: row;
-	}
-	#home-about .section-header h2{
-		font-size: 2.5em;
-	}
-
-	#home-countdown h2{
-		font-size: 2.5em;
-	}
-	.myslide {
-		height: 50vh;
-	}
+	.home-announcement-header h2{font-size: 3em;}
+	.home-announcement-header h4{font-size: 1.2em;}
+	.flex-always-row {flex-direction: row;}
+	#home-about .section-header h2{font-size: 6vw;}
+	#home-about .card, #home-information .card{width: 500px;}
+	#home-countdown h2{font-size: 2.5em;}
+	.myslide {height: 50vh;}
 	.slideShowTxt {
 		letter-spacing: 2px;
 		line-height: 25px;
@@ -691,9 +683,7 @@ q {font-style: italic;}
 		font-size: 2vw;
 	}
 	.myQuotes q{font-size: 4vw;}
-	#home-information .card{
-		width: 600px;
-	}
+	
 	.profile-main{
 		text-align: center;
 		margin: 0;
@@ -719,7 +709,9 @@ q {font-style: italic;}
 	#footer .flex-column{
 		flex-direction: column;
 	}
-	
+	.languages-section .line-horizontal{
+		margin: 10px auto;
+	}
 	.section-header h2{
 		font-size: 5.5vw;
 		text-align: center;
@@ -783,14 +775,24 @@ q {font-style: italic;}
 		background-color: #ca9b52;
 	}
 	.navbar a{
-		font-size: 2.5vw;
+		font-size: 3.2vw;
+	}
+	.home-announcement-left{
+		width: 90%;
+		height: 250px;
+	}
+	.home-announcement-right{
+		margin: 0;
+		margin-top: -40px;
+		border-top: solid var(--palatinate-purple) 25px;
+		border-right: 1px solid #ebe7ee;;
 	}
 	#home-about .section-header h2{
-		font-size: 3em;
+		font-size: 8vw;
+		display: inline-block;
 	}
-	#home-information .card{
-		width: 75%;
-	}
+
+	#home-information .card, #home-about .card{width: 100%;}
 	#footer .flex{
 		flex-direction: column;
 	}
