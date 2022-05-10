@@ -74,6 +74,7 @@ q {font-style: italic;}
 .drop-shadow-medium {filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.6));}
 .flex{display: flex;}
 .flex-column{flex-direction:column;}
+.flex-always-row {flex-direction: row;}
 .float-left{float: left;}
 .float-right{float: right;}
 .justify-content-center{justify-content: center;}
@@ -317,7 +318,7 @@ q {font-style: italic;}
 /*------------------------accordionNavigationBar_ENDS--------------------------------*/
 /*------------------------------countdownTimer---------------------------------------*/
 #about-countdown, #home-countdown{
-	margin-bottom: -3.5rem;
+	/*margin-bottom: -3rem;*/
 	position: relative;
 	z-index: 1;
 }
@@ -346,7 +347,7 @@ q {font-style: italic;}
 
 .home-announcement-left{
 	background: url(../img/safeTheDate_section_edited@2x.jpg) no-repeat center/cover;
-	height: 40vw;
+	height: 45vw;
 	width: 80%;
 }
 .home-announcement-right{
@@ -442,19 +443,10 @@ q {font-style: italic;}
 	border: 3px solid var(--palatinate-purple);
 	padding: 3%;
 }
-.profile-main{
-	line-height: 1.1;
-}
-.profile-main h2{
-	font-size: 1.5em;
-	
-}
-.profile-main h3{
-	color: var(--honey-yellow);
-	font-size: 1.7em;
-}
+.profile-main{line-height: 1.1;}
+.profile-main h2{font-size: 1.7em; margin-top: 10px;}
+.profile-main h3{color: var(--honey-yellow);font-size: 1.7em;}
 .social-list{
-	display: flex;
 	justify-content: space-around;
 	list-style: none;
 	margin: 0;
@@ -593,6 +585,7 @@ q {font-style: italic;}
 	}
 	.hide-on-small {display: none;}
 	.hide-on-desktop{display: block;}
+	.margin-left{margin-left: 0;}
 	#about-countdown, #home-countdown{
 		margin-bottom: -3rem;
 		position: relative;
@@ -613,7 +606,6 @@ q {font-style: italic;}
 	.home-announcement-header .flex{flex-direction: row;}
 	.home-announcement-header h2{font-size: 3em;}
 	.home-announcement-header h4{font-size: 1.2em;}
-	.flex-always-row {flex-direction: row;}
 	#home-about .section-header h2{font-size: 6vw;}
 	#home-about .card, #home-information .card{width: 500px;}
 	#home-countdown h2{font-size: 2.5em;}
@@ -688,8 +680,9 @@ q {font-style: italic;}
 		text-align: center;
 		margin: 0;
 	}
-	.profile-main h2{font-size: 2em;padding: 0;}
+	.profile-main h2{font-size: 2em;margin-top: 10px; padding: 0;}
 	.social-list{
+		flex-direction: row;
 		float: none;
 		margin: 0 auto;
 	}
@@ -730,8 +723,7 @@ q {font-style: italic;}
 	}
 	.section-header .btn{
 		display: flex;
-  		justify-content: center;
- 	 	align-items: center;
+		justify-content: center;
 	}
 	.curl-normal{
 		width: 8rem;
@@ -743,7 +735,6 @@ q {font-style: italic;}
 		width: 8rem;
 		height: 1.5rem;
 		background-size: 7rem;
-
 	}
 
 }
@@ -793,6 +784,20 @@ q {font-style: italic;}
 	}
 
 	#home-information .card, #home-about .card{width: 100%;}
+	.profile-main h2{font-size: 1.5em;margin-top: 10px;}
+	.section-header h2{
+		font-size: 7vw;
+		font-weight: bold;
+		padding: auto;
+		text-align: center;
+	}
+	.section-header h3{
+		font-size: 4.5vw;
+		padding: auto;
+		color:  var(--tumbleweed);
+		text-align: center;
+	}
+	
 	#footer .flex{
 		flex-direction: column;
 	}
