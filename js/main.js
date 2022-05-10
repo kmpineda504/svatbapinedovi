@@ -43,7 +43,6 @@ function slidefun(n) {
 	dot[counter - 1].className += " active";
 }
 //---------------------slideShow-JS-ENDS--------------------//
-
 //-----------------------Accordion js-----------------------//
 var accordion = document.getElementsByClassName("accordion");
 var i;
@@ -119,34 +118,52 @@ function showSlides(n) {
 }
 //-----------------------quoteSlideshow_ENDS-----------------------//
 //----------------------------MAP----------------------------------//
-// Initialize and add the map
-function initMap(){
-  var chrudim={lat:49.9497,lng: 15.7951 }
-  var options ={
-    zoom:4,
-    center:chrudim
+function initMap() {
+  var innitLocation = { lat: 49.992992, lng: 15.864952 };
+  var kostel = {lat: 49.951, lng: 15.7958};
+  var dasickeSklepy = {lat: 50.0290, lng: 15.9154};
+  var options={
+    zoom: 11.5,
+    center:innitLocation
   }
-  //new map
-  var map = new
-  google.maps.Map(document.getElementById("map"),options);
+  var map = new google.maps.Map(document.getElementById("map"), options);
+ 
+  //Array of markers
+  var markers = [
+    {coords:kostel,content:'<h1>Church</h1></br><p>Wedding ceremony takes place here</p>'},
+    {coords:dasickeSklepy,content:'<h1>Wedding Party</h1></br><p>PIVOVAR DAŠICE - DAŠICKÉ SKLEPY</p>'}
+  ];
 
+  //Loop through markers
+  for(var i=0;i<markers.length;i++){
+    //Add marker
+    addMarker(markers[i]);
+  }
 
-  // The location of Uluru
+  function addMarker(props){
+    var marker = new google.maps.Marker({
+      position: props.coords,
+      map: map,
+    });
 
-  //
- // const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-//  const map = new google.maps.Map(
-  //  document.getElementById("map") as HTMLElement,
-  //  {
-   //   zoom: 4,
-   //   center: uluru,
-   // }
- // );
+    //Check for customIcon
+    if(props.iconImage){
+      //Set icon image
+      marker.setIcon(props.iconImage);
+    }
+    //Check for customIcon
+    if(props.iconImage){
+      //Set icon image
+      marker.setIcon(props.iconImage);
+    }
 
-  // The marker, positioned at Uluru
-  //const marker = new google.maps.Marker({
-  //  position: uluru,
-   // map: map,
-  //});
+    //Check content
+    if(props.content){
+      var infoWindow = new google.maps.InfoWindow({ content: props.content });
+      marker.addListener('click', function () { infoWindow.open(map, marker) });
+    }
+  }
 }
+
+window.initMap = initMap;
+//-------------------------MAP_ENDS--------------------------------//
