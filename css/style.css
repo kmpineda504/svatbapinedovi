@@ -807,4 +807,6 @@ q {font-style: italic;}
 	.languages-section a{
 		text-align: center;
 	}
+	.hide-on-smartphone{display: none;}
+	.show-on-smartphone{display: block;}
 }
