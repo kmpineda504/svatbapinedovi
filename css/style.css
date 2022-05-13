@@ -730,7 +730,7 @@ body{background: url(../img/bg/white_wall_hash.png) center rgba(255, 255, 255, 0
 	.home-announcement-header h4{font-size: 1.2em;}
 	#home-about .section-header h2{font-size: 6vw;}
 	#home-about .card, #home-information .card{width: 500px;}
-	#about-countdown h2, #home-countdown h2{font-size: 2.5em;}
+	#about-information h2, #home-countdown h2{font-size: 2.5em;}
 	.myslide {height: 50vh;}
 	.slideShowTxt {
 		letter-spacing: 2px;
