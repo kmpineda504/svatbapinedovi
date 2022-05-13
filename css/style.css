@@ -21,6 +21,7 @@ h2{font-weight: 400;padding: 4% 0;}
 h3{padding: 2% 0;}
 p{padding: 10px 0 10px 0;line-height: 20px;}
 q {font-style: italic;}
+i{color: var(--palatinate-purple);}
 
 
 /*Utility Classes*/
@@ -88,7 +89,6 @@ q {font-style: italic;}
 .drop-shadow-medium {filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.6));}
 .flex{display: flex;}
 .flex-column{flex-direction:column;}
-.flex-always-row {flex-direction: row;}
 .float-left{float: left;}
 .float-right{float: right;}
 .justify-content-center{justify-content: center;}
@@ -139,6 +139,8 @@ q {font-style: italic;}
 .padding-left{padding-left: 1.5rem;}
 .padding-right{padding-right: 1.5rem;}
 .padding-top{padding-top: 1.5rem;}
+.plate-utensils{background: url(../img/SVG/plate-utensils.svg)	no-repeat;width: 33px; height: 33px;}	
+.rings-wedding{background: 	url(../img/SVG/rings-wedding.svg) 	no-repeat;width: 33px; height: 33px;}
 .rotate-text{transform: rotate(-10deg);}
 .small-item{-webkit-flex: 1 0 0; flex: 1 0 0;}
 .text-align-center{text-align: center; }
@@ -575,6 +577,7 @@ q {font-style: italic;}
 	max-width: 800px;
 	position: relative;
 	width: 80%;
+	text-align: center;
 }
 .timeline ul{list-style: none;}
 .timeline ul li{
@@ -584,9 +587,10 @@ q {font-style: italic;}
 	padding: 20px;
 	position: relative;
 	border-radius: 10px;
+	border-top: 10px solid var(--palatinate-purple);
 }
 .timeline li:last-child{margin-bottom: 0;}
-.timeline-content h2, p{margin-bottom: 10px;}
+.timeline-content p{margin-bottom: 10px;}
 .timeline-content .time{
 	color: var(--palatinate-purple);
 	font-size: 18px;
@@ -594,8 +598,18 @@ q {font-style: italic;}
 	letter-spacing: 2px;
 	padding: 0;
 }
+.timeline-content .timeline-icon{
+	font-size: 1.5rem;
+	padding: 10px;
+	margin: auto 15px;
+	color: var(--palatinate-purple);
+	line-height: 10px;
+}
 
+
+/*Media querry applicable only for the timeline*/
 @media only screen and (min-width: 768px) {
+	.timeline{text-align: left;}
 	.timeline::before{
 		background-color: var(--palatinate-purple);
 		content: "";
@@ -613,7 +627,7 @@ q {font-style: italic;}
 	}
 	.timeline ul li::after{
 		background-color: white;
-		border: solid 5px var(--palatinate-purple);
+		border: solid 5px var(--tumbleweed);
 		border-radius: 50%;
 		content: "";
 		height: 20px;
@@ -627,26 +641,23 @@ q {font-style: italic;}
 		transform: translateX(-30px);
 		border-radius: 20px 0px 20px 20px;
 	}
-
 	.timeline ul li:nth-child(odd)::after {
 		transform: translate(50%, -50%);
 		right: -31px;
 	}
-
 	.timeline ul li:nth-child(even) {
 		float: right;
 		clear: left;
 		transform: translateX(30px);
 		border-radius: 0px 20px 20px 20px;
 	}
-
 	.timeline ul li:nth-child(even)::after {
 		transform: translate(-50%, -50%);
 		left: -31px;
 	}
 	.timeline-content .time{
 		position:absolute;
-		top: -30px;
+		top: -35px;
 	}
 }
 
