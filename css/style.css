@@ -439,6 +439,7 @@ body{background: url(../img/bg/white_wall_hash.png) center rgba(255, 255, 255, 0
 .section-header h3{padding: 0.25em 0; color:  var(--tumbleweed);}
 .section-header p{padding: 2vw 0;}
 .section-header i{font-size: 3vw;padding: 0.3em 0.75em;}
+.section-header iframe{width: 95%; height: 1000px;}
 /*-------------------------------------home-about------------------------------------------*/
 .branch-left{	background: url(../img/SVG/branch_left.svg)		no-repeat center;}
 .branch-right{	background: url(../img/SVG/branch_right.svg)	no-repeat center;}
@@ -505,9 +506,9 @@ body{background: url(../img/bg/white_wall_hash.png) center rgba(255, 255, 255, 0
 .myQuotes-author {color: var(--honey-yellow);}
 .myQuotes-quote {color: white; font-size: 1.7vw;}
 .quotes-container {position: relative;}
-.quote-img-1{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG1.jpg) fixed no-repeat center/cover;}
-.quote-img-2{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG2.jpg) fixed no-repeat center/cover;}
-.quote-img-3{background: rgba(0, 0, 0, 0.5) url(../img/quoteBG3.jpg) fixed no-repeat center/cover;}
+.quote-img-1{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG1.jpg) fixed no-repeat center/cover;}
+.quote-img-2{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG2.jpg) fixed no-repeat center/cover;}
+.quote-img-3{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG3.jpg) fixed no-repeat center/cover;}
 /*---------------------------------------quote_ENDS------------------------------------*/
 /*------------------------------------home-information---------------------------------*/
 #home-information{background-color: none;}
@@ -686,7 +687,9 @@ body{background: url(../img/bg/white_wall_hash.png) center rgba(255, 255, 255, 0
 }
 #gallery-gallery .section-header h2, h3, p{padding: 0.5rem;}
 
-
+#wedding-gifts .section-header i{font-size: 100px; transition: transform 0.2s;}
+#wedding-gifts .section-header i:hover{transform: scale(1.2);}
+#wedding-gifts .section-header p{padding: 1vw 0;}
 
 
 @media screen and (max-width: 768px) {

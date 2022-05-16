@@ -60,6 +60,7 @@ for (i = 0; i < accordion.length; i++) {
 }
 //-----------------------Accordion JS ENDS-----------------------//
 
+
 //-----------------------Countdown_Timer-----------------------//
 // Set the date we're counting down to
 var countDownDate = new Date("Sep 24, 2022 13:00:00").getTime();
@@ -124,7 +125,7 @@ function initMap() {
   var dasickeSklepy = {lat: 50.0290, lng: 15.9154};
   var options={
     //mapId: "2635966e05b3c0d6",
-    mapId: "8e0a97af9386fef",
+    //mapId: "8e0a97af9386fef",
     
     zoom: 11.5,
     center:innitLocation
