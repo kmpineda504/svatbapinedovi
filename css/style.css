@@ -23,7 +23,7 @@ p{padding: 10px 0 10px 0;line-height: 20px;}
 q {font-style: italic;}
 i{color: var(--palatinate-purple);}
 a:hover{color: var(--palatinate-purple);}
-body{background: url(../img/bg/lightpaperfibers.png) center;}
+body{background: url(../img/bg/fishnets-and-hearts.webp) center;}
 
 /*Utility Classes*/
 [aria-current]{font-weight: bold;}
@@ -67,7 +67,7 @@ body{background: url(../img/bg/lightpaperfibers.png) center;}
 }
 .btn-secondary:hover{transform: scale(1.2);}
 .card {	
-	background: url(../img/bg/) center;
+	background: url(../img/bg/lightpaperfibers.png) center;
 	background-color: #ffffff;
 	border: 1px solid #ebe7ee;
 	margin: 10px;
@@ -351,7 +351,7 @@ body{background: url(../img/bg/lightpaperfibers.png) center;}
 	margin-top: -2.5rem;
 	position: relative;
 	z-index: -1;
-	background: url(../img/bg/full-bloom.webp) center rgba(255, 255, 255, 0.7);
+	background: url(../img/bg/) center ;
 
 }
 #about-information .card, #home-countdown .card{
