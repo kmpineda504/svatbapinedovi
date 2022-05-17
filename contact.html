@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/flag-icon.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ba3479834a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -65,9 +63,43 @@
             <li><a aria-current="page" href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <div>
+        <div class="accordion-container">
+            <button class="accordion fa-solid fa-chevron-down"></button>
+            <div class="panel box-shadow">
+                <nav class="navbar box-shadow">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="confirmation.html">Attendance & Gifts</a></li>
+                        <li><a aria-current="page" href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
    
-    <section>
-        <h1>Contact information</h1>
+    <section class="flex">
+        <div class="container">
+            <div class="text-align-center section-header ">
+                <h2 class="line-detail-h bold-text">Get in touch</h2>
+            </div>
+            <div class="flex">
+                <div class="contact-img drop-shadow-medium hide-on-small"></div>
+                <div>
+                    <form action="https://formspree.io/f/xlezaakw" method="POST">
+                        <label for="uname" >Full Name</label>
+                        <input type="text" id="uname" name="username" placeholder="Your full name.." required>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email.." required>
+                        <label for="subject">Subject</label>
+                        <textarea id="message" name="message" placeholder="Leave us a message..." style="height:170px" required></textarea>
+                        <div class="text-align-left"><input type="submit" value="Submit" class="btn"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
 
