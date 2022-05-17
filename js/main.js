@@ -131,16 +131,13 @@ function initMap() {
     center:innitLocation
   }
   var map = new google.maps.Map(document.getElementById("map"), options);
- 
-  //Array of markers
+
   var markers = [
     {coords:kostel,content:'<h1>Wedding ceremony</h1><p>Nanebevzetí Panny Marie v Chrudimi</br>Komenského</br>537 01 Chrudim</p><a href="https://goo.gl/maps/yyCrP1SoSZJtKTWW9" target="_blank">View in google maps</a>'},
     {coords:dasickeSklepy,content:'<h1>Wedding Party</h1><p>Dašické sklepy.</br>Komenského 27</br>533 03 Dašice</p><a href="https://goo.gl/maps/TEoHx7TgSFG7kYTD8" target="_blank">View in google maps</a>'}
   ];
 
-  //Loop through markers
   for(var i=0;i<markers.length;i++){
-    //Add marker
     addMarker(markers[i]);
   }
 
@@ -150,24 +147,18 @@ function initMap() {
       map: map,
     });
 
-    //Check for customIcon
     if(props.iconImage){
-      //Set icon image
       marker.setIcon(props.iconImage);
     }
-    //Check for customIcon
     if(props.iconImage){
-      //Set icon image
       marker.setIcon(props.iconImage);
     }
 
-    //Check content
     if(props.content){
       var infoWindow = new google.maps.InfoWindow({ content: props.content });
       marker.addListener('click', function () { infoWindow.open(map, marker) });
     }
   }
 }
-
 window.initMap = initMap;
 //-------------------------MAP_ENDS--------------------------------//
