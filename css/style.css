@@ -23,7 +23,7 @@ p{padding: 10px 0 10px 0;line-height: 20px;}
 q {font-style: italic;}
 i{color: var(--palatinate-purple);}
 a:hover{color: var(--palatinate-purple);}
-body{background: url(../img/bg/lightpaperfibers.png) center rgba(255, 255, 255, 0.7);}
+body{background: url(../img/bg/lightpaperfibers.png) center;}
 
 /*Utility Classes*/
 [aria-current]{font-weight: bold;}
