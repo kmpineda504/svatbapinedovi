@@ -7,7 +7,6 @@
 	--castleton-green: #205843ff;
 	--chinese-violet: #86648aff;
 	--glossy-grape: #b39ebcff;
-	--gradient: linear-gradient(to top, #f8f9fa, rgb(255, 255, 255));
 	--honey-yellow: #f9ae1eff;
 	--hoverGolden-color: #ffec99;
 	--jet: #333533ff;
@@ -244,13 +243,13 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 	letter-spacing: 2px;
 	line-height: 25px;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-name: posi;
 	z-index: 1;
-	width: 45%;
+	width: 60%;
 	height: auto;
-	margin-top: -50px;
+	margin-top: -30px;
 }
 @-webkit-keyframes posi {
 	from {
@@ -278,23 +277,24 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 .decorative-header-asset01{background: 	url(../img/SVG/Asset1.svg) 	no-repeat;width: 40px; height: 40px;}
 .decorative-header-asset02{background: 	url(../img/SVG/Asset2.svg) 	no-repeat;width: 70px; height: 70px;}
 
-
-.slideShow-header-content h1, h2, h3, span{color: white;}
+.white-text{color: white;}
+.slideShow-header-content{color: white;}
 .slideShow-header-content h1{
 	font-size: 4vw;
 	font-family: 'Playfair Display', serif;
-	padding: 20px 0;
+	padding: 20px 20px 20px 0;
 }
 .slideShow-header-content h2{
-	font-size: 2.5vw;
+	font-size: 2vw;
 	padding: 10px 0;
 }
 .slideShow-header-content h3{
-	font-size: 1.5vw;
+	font-size: 1.7vw;
 	padding: 10px 0;
 	font-weight: lighter;
 }
 .slideShow-header-content span{
+	color: white;
 	font-size: 1.5vw;
 	font-family: 'Playfair Display', serif;
 	margin: 0 5px;
