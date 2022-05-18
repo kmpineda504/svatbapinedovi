@@ -102,9 +102,9 @@
                 <ul data-aos="fade-up" data-aos-delay="500">
                     <li class="box-shadow">
                         <div class="timeline-content">
-                            <h3 class="time">12:25 - 12:40</h3> 
+                            <h3 class="time">12:20 - 12:50</h3> 
                             <div class="flex align-items-center"><i class="fa-solid fa-cross timeline-icon"></i><h2 class="bold-text">Church</h2></div>
-                            <p>Guest will gather in front of the church at: </p>  
+                            <p>Guest will gather in front of the church</p>  
                             <div class="flex flex-always-row padding-left align-items-center">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <p class="padding-left"><span class="bold-text">Kostel Nanebevzetí Panny Marie</span> <br>Komenského<br>537 01 Chrudim<br><a href="#about-map">See map</a></p>
@@ -136,16 +136,17 @@
             </div>
         </div>
     </section>
-    <section id="about-map" class="flex">
-        <div class="container">
+    <section id="about-map" >
+        <div class="flex justify-content-center">
             <div class="flex flex-column section-header" data-aos="zoom-out-down">
                 <div class="text-align-center">
                     <h2 class="bold-text line-detail-h">Map</h2>
                 </div>
-            </div>
+            </div>  
         </div>
+        <div ><div class=" box-shadow" id="map" data-aos="fade-down" data-aos-delay="300"></div></div> 
     </section>
-    <div ><div class=" box-shadow" id="map" data-aos="fade-down" data-aos-delay="300"></div></div> 
+    
     <section id="extra-information" class="flex" data-aos="zoom-in" data-aos-delay="200">
         <div class="container">
             <div class="flex">
@@ -210,12 +211,8 @@
                                 <li><a href="about.html#about-map">Location</a></li>
                             </ul>
                         </div>
-                        <div class="languages-section">
-                            <div class="line-horizontal"></div>
-                            <a href="#"class="language-btn"><i class="flag-icon flag-icon-gbr"></i></a>     
-                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-cze"></i></a>
-                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-esp"></i></a>
-                        </div>
+                        <div class="line-horizontal"></div>
+                        <span id="google_translate_element"></span>
                     </div> 
                 </div>  
             </div>
@@ -225,9 +222,8 @@
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init();</script>
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW9GhDeJzf5cEZdkcjv7Gn839-AdM6iN8&callback=initMap&v=weekly"
-    defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW9GhDeJzf5cEZdkcjv7Gn839-AdM6iN8&callback=initMap&v=weekly" defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
 </html>

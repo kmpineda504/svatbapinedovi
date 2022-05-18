@@ -124,8 +124,8 @@ function initMap() {
   var kostel = {lat: 49.951, lng: 15.7958};
   var dasickeSklepy = {lat: 50.0290, lng: 15.9154};
   var options={
-    //mapId: "2635966e05b3c0d6",
-    mapId: "8e0a97af9386fef",
+    mapId: "2635966e05b3c0d6",
+    //mapId: "8e0a97af9386fef",
     
     zoom: 11.5,
     center:innitLocation
@@ -162,3 +162,12 @@ function initMap() {
 }
 window.initMap = initMap;
 //-------------------------MAP_ENDS--------------------------------//
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+      defaultLanguage: 'en',
+      pageLanguage: 'en',
+      includedLanguages: 'en,cs,es',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay:false,
+      multilanguagePage: true}, 'google_translate_element')
+};

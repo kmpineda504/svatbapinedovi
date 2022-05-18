@@ -85,7 +85,7 @@
                         <input type="text" id="uname" name="username" placeholder="Your full name.." required>
                         <label for="email">Email</label>
                         <input type="text" id="email" name="email" placeholder="Your email.." required>
-                        <label for="subject">Subject</label>
+                        <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Leave us a message..." style="height:170px" required></textarea>
                         <div class="text-align-left"><input type="submit" value="Submit" class="btn"></div>
                     </form>
@@ -129,12 +129,8 @@
                                 <li><a href="about.html#about-map">Location</a></li>
                             </ul>
                         </div>
-                        <div class="languages-section">
-                            <div class="line-horizontal"></div>
-                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-gbr"></i></a>
-                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-cze"></i></a>
-                            <a href="#" class="language-btn"><i class="flag-icon flag-icon-esp"></i></a>
-                        </div>
+                        <div class="line-horizontal"></div>
+                        <span id="google_translate_element"></span>
                     </div>
                 </div>
             </div>
@@ -145,5 +141,6 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init();</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
 </html>

@@ -711,7 +711,24 @@ input[type=text], textarea {
 	margin: 6px 0 16px 0;
 	resize: vertical;
 }
-  
+#google_translate_element .goog-te-gadget-simple{
+	border: none;
+	background-color: transparent;
+}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
+	color: var(--palatinate-purple);
+	padding: 5px 15px 5px 0;
+}
+.goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img{display: none !important;}
+.goog-tooltip{display: none !important;}
+.goog-tooltip:hover{display: none !important;}
+.goog-text-highlight{
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+#goog-gt-tt, .goog-te-balloon-frame{display: none !important;} 
+
 
 @media screen and (max-width: 768px) {
 	#map{width: 100%;}
