@@ -23,7 +23,7 @@ p{padding: 10px 0 10px 0;line-height: 20px;}
 q {font-style: italic;}
 i{color: var(--palatinate-purple);}
 a:hover{color: var(--palatinate-purple);}
-body{background: url(../img/bg/fishnets-and-hearts.webp) center;}
+body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !important;}
 
 /*Utility Classes*/
 [aria-current]{font-weight: bold;}
@@ -245,6 +245,9 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;}
 	-webkit-animation-duration: 2s;
 	-webkit-animation-name: posi;
 	z-index: 1;
+	width: 45%;
+	height: auto;
+	margin-top: -50px;
 }
 @-webkit-keyframes posi {
 	from {
@@ -670,7 +673,7 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;}
 }
 /*--------------------------------------timeline_ENDS----------------------------------*/
 
-
+.extra-information-content{flex-grow: 1;}
 .extra-information-content h2{font-size: 2.3vw;}
 .extra-information-content p{padding: 10px 0;}
 .extra-information-content i{
@@ -773,13 +776,16 @@ input[type=text], textarea {
 	.slideShowTxt {
 		letter-spacing: 2px;
 		line-height: 25px;
-		top: 50%;
+		top: 60%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		-webkit-animation-name: posi2;
-		-webkit-animation-duration: 2s;
+		-webkit-animation-duration: 1s;
 		animation-name: posi2;
 		animation-duration: 2s;
+		width: 60%;
+		height: auto;
+		
 	}
 	@-webkit-keyframes posi2 {
 		from {top: 35%;}
