@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
 	--black-color: #000000;
@@ -27,7 +28,8 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 
 /*Utility Classes*/
 [aria-current]{font-weight: bold;}
-* {
+
+*{
 	box-sizing: border-box;
 	color: var(--jet);
 	font-family: 'Raleway',
@@ -144,6 +146,7 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 .padding-top{padding-top: 1.5rem;}
 .plate-utensils{background: url(../img/SVG/plate-utensils.svg)	no-repeat;width: 33px; height: 33px;}	
 .rings-wedding{background: 	url(../img/SVG/rings-wedding.svg) 	no-repeat;width: 33px; height: 33px;}
+
 .rotate-text{transform: rotate(-10deg);}
 .small-item{-webkit-flex: 1 0 0; flex: 1 0 0;}
 .text-align-center{text-align: center; }
@@ -236,7 +239,7 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 .slideShowTxt {
 	animation-duration: 2s;
 	animation-name: posi;
-	color: #fff;
+	color: white;
 	left: 15%;
 	letter-spacing: 2px;
 	line-height: 25px;
@@ -270,8 +273,35 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 .slideShowTxt {
 	font-weight: bold;
 	margin-bottom: 20px;
-	text-transform: uppercase;
 }
+
+.decorative-header-asset01{background: 	url(../img/SVG/Asset1.svg) 	no-repeat;width: 40px; height: 40px;}
+.decorative-header-asset02{background: 	url(../img/SVG/Asset2.svg) 	no-repeat;width: 70px; height: 70px;}
+
+
+.slideShow-header-content h1, h2, h3, span{color: white;}
+.slideShow-header-content h1{
+	font-size: 4vw;
+	font-family: 'Playfair Display', serif;
+	padding: 20px 0;
+}
+.slideShow-header-content h2{
+	font-size: 2.5vw;
+	padding: 10px 0;
+}
+.slideShow-header-content h3{
+	font-size: 1.5vw;
+	padding: 10px 0;
+	font-weight: lighter;
+}
+.slideShow-header-content span{
+	font-size: 1.5vw;
+	font-family: 'Playfair Display', serif;
+	margin: 0 5px;
+}
+
+
+
 /*------------------------headerSlideShow_ENDS-------------------------------------*/
 
 
@@ -354,14 +384,13 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 	margin-top: -2.5rem;
 	position: relative;
 	z-index: -1;
-	background: url(../img/bg/) center ;
-
 }
 #about-information .card, #home-countdown .card{
 	border-bottom: 10px solid var(--palatinate-purple);
 }
 
 .countdown{
+	color: var(--jet);
 	font-size: 4vw;
 	margin: 2%;
 	padding: 0;
