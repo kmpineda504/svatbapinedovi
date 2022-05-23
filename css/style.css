@@ -279,8 +279,8 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 	background: url(../img/SVG/Asset2.svg) no-repeat;
 	width: 55px;
 	height: 55px;
-	margin-left: -20px;
-	margin-top: -35px;
+	margin-left: -15px;
+	margin-top: -30px;
 }
 
 .white-text{color: white;}
@@ -289,10 +289,6 @@ body{background: url(../img/bg/fishnets-and-hearts.webp) center;top: 0px !import
 	font-size: 4vw;
 	font-family: 'Bitter', serif;
 	padding: 10px 0 10px 0;
-	background: -webkit-linear-gradient(white, rgb(240, 239, 239));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
 }
 .slideShow-header-content h2{
 	font-size: 2vw;
