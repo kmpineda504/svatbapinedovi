@@ -59,37 +59,28 @@ for (i = 0; i < accordion.length; i++) {
   });
 }
 //-----------------------Accordion JS ENDS-----------------------//
-
-
 //-----------------------Countdown_Timer-----------------------//
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 24, 2022 13:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
+var countdown = () =>{
+  var countDate = new Date("Sep 24, 2022 13:00:00").getTime()
   var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+  var gap = countDate - now;
+
+  var second = 1000;
+  var minute = second * 60;
+  var hour = minute * 60;
+  var day = hour * 24;
+
+  var textDay = Math.floor(gap / day);
+  var textHour = Math.floor((gap % day) / hour);
+  var textMinute = Math.floor((gap % hour) / minute);
+  var textSecond = Math.floor((gap % minute) / second);
+
+  document.querySelector(".day").innerText = textDay;
+  document.querySelector(".hour").innerText = textHour;
+  document.querySelector(".minute").innerText = textMinute;
+  document.querySelector(".second").innerText = textSecond;
+}
+setInterval(countdown, 1000);
 //-----------------------quoteSlideshow-----------------------//
 var slideIndex = 1;
 showSlides(slideIndex);

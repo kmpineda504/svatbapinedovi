@@ -34,8 +34,7 @@ a:hover{color: var(--palatinate-purple);}
 *{
 	box-sizing: border-box;
 	color: var(--jet);
-	font-family: 'Raleway',
-	sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.02vw;
 	margin: 0;
 	padding: 0;
@@ -391,14 +390,16 @@ a:hover{color: var(--palatinate-purple);}
 
 .countdown{
 	color: var(--jet);
-	font-family: 'Montserrat', sans-serif;
-	font-size: 4vw;
-	font-weight: bold;
-	margin: 2%;
+	justify-content: center;
+	margin-top: 3%;
 	padding: 0;
 	text-align: center;
-	
 }
+.countdown-container{
+	padding: 0 2rem;
+}
+.countdown-container h3{color: var(--tumbleweed); font-size:1.25rem;font-weight: 500;}
+.day,.hour,.minute,.second{font-size:2.7rem; font-weight: bold; font-family: 'Montserrat', sans-serif;}
 /*----------------------------countdownTimer_ENDS-----------------------------------*/
 /*------------------------------home-announcement-----------------------------------*/
 #home-announcement {
@@ -497,7 +498,7 @@ a:hover{color: var(--palatinate-purple);}
 	border: 3px solid var(--palatinate-purple);
 	padding: 3%;
 }
-.profile-main{line-height: 1.1;}
+.profile-main{letter-spacing: none;}
 .profile-main h2{font-size: 1.7em; margin-top: 10px;}
 .profile-main h3{color: var(--honey-yellow);font-size: 1.7em;}
 .social-list{
@@ -801,7 +802,7 @@ input[type=text], textarea {
 	.home-announcement-header h4{font-size: 1.2em;}
 	#home-about .section-header h2{font-size: 6vw;}
 	#home-about .card, #home-information .card{width: 500px;}
-	#about-information h2, #home-countdown h2{font-size: 2.5em;}
+	/*#about-information h2, #home-countdown h2{font-size: 2.5em;}*/
 	.myslide {height: 50vh;}
 	.slideShowTxt {
 		letter-spacing: 2px;
@@ -942,11 +943,17 @@ input[type=text], textarea {
 		background-size: 7rem;
 	}
 	.text-align-left{text-align: center;}
-	
-
-	
 
 
+	.countdown{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.countdown-container{
+		padding: 0 0.125rem;
+	}
+	.countdown-container h3{font-size: 0.75rem;}
+	.day,.hour,.minute,.second{font-size:2.5rem;}
 }
 
 @media screen and (max-width: 480px) {
