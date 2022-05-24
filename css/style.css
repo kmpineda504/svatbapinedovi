@@ -537,6 +537,7 @@ a:hover{color: var(--palatinate-purple);}
 .quote-img-1{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG1.jpg) fixed no-repeat center/cover;}
 .quote-img-2{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG2.jpg) fixed no-repeat center/cover;}
 .quote-img-3{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG3.jpg) fixed no-repeat center/cover;}
+.quote-img-4{background: rgba(0, 0, 0, 0.7) url(../img/quoteBG4.jpg) fixed no-repeat center/cover;}
 /*---------------------------------------quote_ENDS------------------------------------*/
 /*------------------------------------home-information---------------------------------*/
 #home-information{background-color: none;}
