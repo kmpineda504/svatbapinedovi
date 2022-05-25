@@ -151,6 +151,9 @@ function initMap() {
     }
   }
 }
+
+
+
 window.initMap = initMap;
 //-------------------------MAP_ENDS--------------------------------//
 function googleTranslateElementInit(){
