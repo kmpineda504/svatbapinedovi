@@ -1,2 +1,2 @@
-# weddingWebpage_KnA
-Kevin and Anežka's wedding webpage
+# Svatba Pinedovi / CZ
+Kevin & Anežka se budou brát
